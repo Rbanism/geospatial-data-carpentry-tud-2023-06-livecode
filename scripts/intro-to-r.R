@@ -15,7 +15,7 @@ here('data')
 here('scripts', 'intro-to-r.R')
 
 
-# download gapminder data 
+# download gapminder data -----
 
 # download.file("bit.ly/GeospatialGapminder", here('data', 'gapminder_data.csv'), mode = 'wb')
 
@@ -24,6 +24,18 @@ here('scripts', 'intro-to-r.R')
 12/43
 
 
-# ojbect assingment
+# object assignment -------
+
+x <- 12/43
+x
+
+sqrt(12/43)
+
+y <- sqrt(x)
+y
+
+
+
+
 
 

@@ -125,6 +125,8 @@ year_country_gdp_eurasia <- gapminder %>%
 
 head(year_country_gdp_eurasia)
 
+# group  & summarize 
+
 
 
 

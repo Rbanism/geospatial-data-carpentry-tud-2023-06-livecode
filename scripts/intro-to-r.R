@@ -70,4 +70,12 @@ without_na <- with_na[!is.na(with_na)]
 
 # Factors -----
 
+nordic_char <-  c('Norway', 'Sweden', 'Norway', 'Denmark', 'Sweden')
+nordic_char
+
+nordic_cat <- factor(nordic_char)
+nordic_cat
+
+levels(nordic_cat)
+nlevels(nordic_cat)
 

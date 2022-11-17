@@ -113,6 +113,18 @@ str(year_country_gdp)
 # filter
 
 year_country_gdp_eur <- gapminder %>%
-  filter(continent == 'Europe' & year > 2000)
+  filter(continent == 'Europe' & year > 2000) %>%
+  select(year, country, gdpPercap)
+
+head(year_country_gdp_eur)
+
+
+year_country_gdp_eurasia <- gapminder %>%
+  filter(continent =='Europe' | continent == 'Asia') %>%
+  select(year, country, gdpPercap)
+
+head(year_country_gdp_eurasia)
+
+
 
 

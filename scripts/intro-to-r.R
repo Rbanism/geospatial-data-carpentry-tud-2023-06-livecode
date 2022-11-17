@@ -84,5 +84,6 @@ nordic_cat <- factor(nordic_cat, levels = c("Norway", "Sweden", "Denmark"))
 nordic_cat
 
 
+# Exploring data frames ----
 
 

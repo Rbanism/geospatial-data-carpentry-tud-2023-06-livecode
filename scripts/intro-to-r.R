@@ -42,4 +42,15 @@ numeric_vector
 
 
 character_vector <- c("banana", "apple", "orange")
+character_vector
+
+logical_vector <- c(TRUE, FALSE, TRUE)
+logical_vector
+
+
+ab_vector <- c("a", "b")
+ab_vector
+
+abcd_vector <- c(ab_vector, "cd" )
+abcd_vector
 

@@ -110,4 +110,6 @@ year_country_gdp <- gapminder %>%
 str(year_country_gdp)  
 
 
+# filter
+
 

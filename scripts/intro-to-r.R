@@ -17,4 +17,4 @@ here('scripts', 'intro-to-r.R')
 
 # download gapminder data 
 
-download.file("bit.ly/GeoSpatialGapminder")
+# download.file("bit.ly/GeospatialGapminder", here('data', 'gapminder_data.csv'), mode = 'wb')

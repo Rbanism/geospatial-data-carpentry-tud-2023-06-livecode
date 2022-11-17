@@ -59,5 +59,7 @@ abcd_vector
 
 with_na <- c(1, 2, 1, 1, NA, 7, NA)
 
+mean(with_na)
+
 
 

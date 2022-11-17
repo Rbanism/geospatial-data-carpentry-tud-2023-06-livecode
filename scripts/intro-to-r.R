@@ -99,12 +99,15 @@ str(gapminder["continent"])
 
 # Data manipulation -----
 
+# select
 year_country_gdp <- select(gapminder, year, country, gdpPercap)
 str(year_country_gdp)
 
-
+# pipe
 year_country_gdp <- gapminder %>%
   select(year, country, gdpPercap)
  
-str(year_country_gdp)   
+str(year_country_gdp)  
+
+
 

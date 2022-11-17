@@ -127,6 +127,9 @@ head(year_country_gdp_eurasia)
 
 # group  & summarize 
 
+gapminder %>% 
+  group_by(continent) %>%
+  summarize(avg_gdpPercap = mean(gdpPercap) )
 
 
 

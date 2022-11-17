@@ -13,3 +13,8 @@ library(here)
 here()
 here('data')
 here('scripts', 'intro-to-r.R')
+
+
+# download gapminder data 
+
+download.file("bit.ly/GeoSpatialGapminder")

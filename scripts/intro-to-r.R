@@ -112,4 +112,7 @@ str(year_country_gdp)
 
 # filter
 
+year_country_gdp_eur <- gapminder %>%
+  filter(continent == 'Europe' & year > 2000)
+
 

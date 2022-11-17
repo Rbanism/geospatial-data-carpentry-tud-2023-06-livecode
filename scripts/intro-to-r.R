@@ -91,4 +91,10 @@ str(gapminder)
 
 head(gapminder)
 
+summary(gapminder)
+
+str(gapminder$continent)
+str(gapminder["continent"])
+
+
 

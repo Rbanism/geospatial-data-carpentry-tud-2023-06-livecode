@@ -11,7 +11,7 @@ The repository should mimic the project structure of the R project that has been
 
 > **Note**: 
 > - You will only see non-empty folders. You still need to create folders to follow the workshop smoothly.
-> `data` folder will not be available in the repository due to its size. 
+> - `data` folder will not be available in the repository due to its size. 
 
 ## Usage Instructors 
 Instructors can automatically update repository using [gitautopush](https://pypi.org/project/gitautopush/). 

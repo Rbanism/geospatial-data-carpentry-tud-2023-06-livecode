@@ -154,3 +154,5 @@ ggplot() +
   geom_sf(data = lines_Delft_bicycle, color = "magenta", size = 2) +
   ggtitle("Mobility network of Delft", subtitle = "Roads dedicated to bikes") +
   coord_sf()
+
+

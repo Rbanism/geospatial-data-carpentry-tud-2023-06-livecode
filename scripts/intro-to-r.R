@@ -148,7 +148,7 @@ head(gapminder_gdp)
 ggplot(data = gapminder, aes(x = lifeExp)) +
   geom_histogram()
   
-gapminder %>%
+plot_c <- gapminder %>%
   filter(year == 2007 & continent == "Americas") %>%
   mutate(country = fct_reorder(country, gdpPercap)) %>%
   ggplot(aes(x = country, y = gdpPercap, fill = lifeExp)) +
@@ -156,4 +156,4 @@ gapminder %>%
   coord_flip() +
   scale_fill_viridis_c()
 
-
+plot_c

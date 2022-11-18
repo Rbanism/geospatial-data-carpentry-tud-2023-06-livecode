@@ -57,4 +57,12 @@ cycleway_Delft <- lines_Delft %>%
   filter(highway == "cycleway")
 
 nrow(cycleway_Delft)
+nrow(lines_Delft)
+
+cycleway_Delft_lengths <- cycleway_Delft %>% 
+  mutate(length = st_length(.))
+
+cycleway_Delft_lengths %>% 
+  summarise(total_length = sum(length))
+
 

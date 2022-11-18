@@ -84,7 +84,7 @@ nordic_cat <- factor(nordic_cat,
                      levels = c("Norway", "Sweden", "Denmark"))
 nordic_cat
 
-
+gapminder <- read.csv(here("data", "gapminder_data.csv"))
 
 
 

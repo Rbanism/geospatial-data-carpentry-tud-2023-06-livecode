@@ -112,7 +112,12 @@ year_country_gdp_euro <- gapminder %>%
 
 head(year_country_gdp_euro)  
 
-# challange 1 
+# challenge 1 
+year_country_lifeExp_Africa <- gapminder %>%
+  filter(continent=="Africa"  ) %>%
+  select(year,country,lifeExp)
 
+nrow(year_country_lifeExp_Africa)
 
+head(year_country_lifeExp_Africa)
 

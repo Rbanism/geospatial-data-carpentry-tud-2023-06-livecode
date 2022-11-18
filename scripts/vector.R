@@ -110,3 +110,14 @@ ggplot(data = pedestrian_Delft) +
   geom_sf() +
   ggtitle("Slow mobility network of Delft", subtitle = "Pedestrian") +
   coord_sf()
+
+# Costomize plots
+levels(factor(lines_Delft$highway))
+
+road_types <- c("motorway", "primary", "secondary", "cycleway")
+
+lines_Delft_selection <- lines_Delft %>% 
+  filter(highway %in% road_types) %>% 
+  mutate(highway <- factor(highway, levels = road_types))
+
+lines_Delft_selection

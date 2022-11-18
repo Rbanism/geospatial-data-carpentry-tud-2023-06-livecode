@@ -16,5 +16,7 @@ here("data", "tud-dsm.tif")
 
 download.file("bit.ly/GeospatialGapminder", 
               here("data", "gapminder_data.csv"),
-              
+              mode = "wb"
               )
+
+

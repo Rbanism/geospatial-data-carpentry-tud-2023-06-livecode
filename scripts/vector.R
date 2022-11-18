@@ -118,6 +118,12 @@ road_types <- c("motorway", "primary", "secondary", "cycleway")
 
 lines_Delft_selection <- lines_Delft %>% 
   filter(highway %in% road_types) %>% 
-  mutate(highway <- factor(highway, levels = road_types))
+  mutate(highway = factor(highway, levels = road_types))
 
-lines_Delft_selection
+levels(lines_Delft_selection$highway)
+
+road_colors <- c("blue", "green", "navy", "purple") 
+
+ggplot(data = lines_Delft_selection) +
+  geom_sf(aes(color = highway)) +
+  scale_color_manual(values = road_colors)

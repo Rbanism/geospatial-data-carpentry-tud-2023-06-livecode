@@ -48,3 +48,13 @@ names(point_Delft)
 head(point_Delft, 10)
 
 lines_Delft
+
+head(lines_Delft$highway)
+
+levels(factor(lines_Delft$highway))
+
+cycleway_Delft <- lines_Delft %>% 
+  filter(highway == "cycleway")
+
+nrow(cycleway_Delft)
+

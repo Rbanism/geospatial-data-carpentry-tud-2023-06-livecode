@@ -5,6 +5,8 @@ library(here)
 # install.packages("sf")
 library(sf)
 
+
+# Open and plot shapefiles ----
 boundary_Delft <- st_read(here("data", "delft-boundary.shp"))
 
 st_geometry_type(boundary_Delft)
@@ -32,3 +34,17 @@ st_crs(point_Delft)
 
 st_bbox(lines_Delft)
 st_bbox(point_Delft)
+
+# Explore and plot by vector layer attributes ----
+lines_Delft
+names(lines_Delft)
+ncol(lines_Delft)
+
+head(lines_Delft)
+head(lines_Delft, 10)
+
+point_Delft
+names(point_Delft)
+head(point_Delft, 10)
+
+lines_Delft

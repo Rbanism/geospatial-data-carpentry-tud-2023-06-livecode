@@ -140,4 +140,17 @@ ggplot(data = lines_Delft_selection) +
           subtitle = "Roads and Cycleways") +
   labs(color = "Road Types", size = "Road Types")
 
+# Challenge 5
 
+class(lines_Delft_selection$highway)
+
+levels(factor(lines_Delft_selection$highway))
+
+lines_Delft_bicycle <- lines_Delft %>% 
+  filter(highway == "cycleway")
+
+ggplot() +
+  geom_sf(data = lines_Delft) +
+  geom_sf(data = lines_Delft_bicycle, color = "magenta", size = 2) +
+  ggtitle("Mobility network of Delft", subtitle = "Roads dedicated to bikes") +
+  coord_sf()

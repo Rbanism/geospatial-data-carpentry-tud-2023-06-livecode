@@ -19,4 +19,7 @@ download.file("bit.ly/GeospatialGapminder",
               mode = "wb"
               )
 
+11 + 100
+10*12
+23/45
 

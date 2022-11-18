@@ -25,3 +25,13 @@ download.file("bit.ly/GeospatialGapminder",
 
 
 #  creating objects ----
+
+x <- 12/43
+x
+
+sqrt(x)
+
+y <- sqrt(x)
+y
+
+

@@ -67,3 +67,7 @@ cycleway_Delft_lengths %>%
 
 ggplot(data = cycleway_Delft) %>% 
   geom_sf() +
+  ggtitle("Slow mobility network of Delft", subtitle = "Cycleways") +
+  coord_sf(datum = st_crs(28992))
+
+

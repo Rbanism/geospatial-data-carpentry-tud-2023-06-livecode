@@ -173,4 +173,8 @@ plot_d <-plot_d +
   xlab("Country")+
   ylab("GDP per capita")
 
+# Write data -----
+
+ggsave(plot = plot_d , filename = 
+         here("fig_output", "plot_americas_2007.pdf"))
 

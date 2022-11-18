@@ -92,4 +92,8 @@ summary(gapminder)
 
 # data manipulation ---- 
 
+# select 
+
+
+
 

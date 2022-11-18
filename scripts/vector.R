@@ -21,4 +21,14 @@ ggplot(data = boundary_Delft) +
   coord_sf(datum = st_crs(28992))
 
 # Challenge 1
+lines_Delft <- st_read(here("data", "delft-streets.shp"))
+point_Delft <- st_read(here("data", "delft-leisure.shp"))
 
+class(lines_Delft)
+class(point_Delft)
+
+st_crs(lines_Delft)
+st_crs(point_Delft)
+
+st_bbox(lines_Delft)
+st_bbox(point_Delft)

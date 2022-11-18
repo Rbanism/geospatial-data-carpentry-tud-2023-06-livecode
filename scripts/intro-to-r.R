@@ -179,3 +179,12 @@ ggsave(plot = plot_d , filename =
          here("fig_output", "plot_americas_2007.pdf"))
 
 
+gapminders_americas_2007 <- 
+  gapminder %>%
+  filter(year == 2007 & continent == "Americas") %>%
+  mutate(country = fct_reorder(country, gdpPercap),
+         lifeExp_b = if_else(lifeExp >= median(lifeExp),"high", "low" ) )
+
+write.csv(gapminders_americas_2007,
+          here("data_output", "gapminder_americas_2007.csv"),
+          row.names = FALSE)

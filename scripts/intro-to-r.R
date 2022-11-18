@@ -158,7 +158,7 @@ plot_c <- gapminder %>%
 
 plot_c
 
-
+plot_d <- 
 gapminder %>%
   filter(year == 2007 & continent == "Americas") %>%
   mutate(country = fct_reorder(country, gdpPercap),
@@ -168,4 +168,8 @@ gapminder %>%
   coord_flip() +
   scale_fill_manual(values = c("light blue", "orange"))
 
+plot_d +
+  ggtitle("GDP per capita in Americas", subtitle = "year 2007")+
+  xlab("Country")+
+  ylab("GDP per capita")
 

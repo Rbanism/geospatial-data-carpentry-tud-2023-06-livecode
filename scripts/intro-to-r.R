@@ -145,6 +145,6 @@ gapminder_gdp <- gapminder %>%
 head(gapminder_gdp)
 
 # Intro to Visualisation -----
-
+ggplot(data = gapminder)
 
 

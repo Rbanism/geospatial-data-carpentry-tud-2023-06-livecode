@@ -137,3 +137,4 @@ ggplot(data = lines_Delft_selection) +
   scale_size_manual(values = line_widths) +
   coord_sf(datum = st_crs(28992))
 
+

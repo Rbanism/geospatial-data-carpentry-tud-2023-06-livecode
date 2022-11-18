@@ -121,3 +121,5 @@ nrow(year_country_lifeExp_Africa)
 
 head(year_country_lifeExp_Africa)
 
+
+# group & summarize 

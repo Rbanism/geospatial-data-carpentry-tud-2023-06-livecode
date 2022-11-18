@@ -134,3 +134,6 @@ gapminder %>%
             )
 # frequencies 
 
+gapminder %>%
+  group_by(continent) %>%
+  count()

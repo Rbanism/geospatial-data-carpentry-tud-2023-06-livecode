@@ -219,5 +219,7 @@ ggplot() +
   ggtitle("Map of Contiguouse NL Municipal Boundaries") +
   coord_sf(datum = st_crs(28992))
 
+country_boundary_NL <- st_read(here("data", "nl-boundary.shp"))
 
-
+ggplot() +
+  

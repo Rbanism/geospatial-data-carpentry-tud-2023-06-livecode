@@ -52,7 +52,7 @@ abcd_vector
 
 # missing values -----
 
-
+with_na <- c(1, 2, 1, 7, NA, 1, NA)
 
 
 

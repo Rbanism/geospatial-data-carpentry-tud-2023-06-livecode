@@ -57,6 +57,8 @@ with_na <- c(1, 2, 1, 7, NA, 1, NA)
 mean(with_na)
 mean(with_na, na.rm = TRUE)
 
+is.na(with_na)
+
 
 
 

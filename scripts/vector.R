@@ -212,7 +212,12 @@ ggplot() +
 
 # Handling spatial projections ----
 
-municipal_boundary_NL
+municipal_boundary_NL <- st_read(here("data", "nl-gemeenten.shp"))
+
+ggplot() +
+  geom_sf(data = municipal_boundary_NL) +
+  ggtitle("Map of Contiguouse NL Municipal Boundaries") +
+  coord_sf(datum = st_crs(28992))
 
 
 

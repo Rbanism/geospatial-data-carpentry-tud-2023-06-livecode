@@ -46,3 +46,6 @@ logical_vector <- c(TRUE, FALSE, TRUE)
 logical_vector
 
 
+ab_vector <- c("a" , "b")
+abcd_vector <-c(ab_vector, "cd")
+abcd_vector

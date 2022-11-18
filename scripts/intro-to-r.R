@@ -132,4 +132,5 @@ gapminder %>%
             sd_pop = sd(pop),
             n_obs = n()
             )
+# frequencies 
 

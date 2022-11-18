@@ -40,4 +40,9 @@ numeric_vector <- c(2, 6, 3)
 numeric_vector
 
 character_vector <- c("banana", "orange", "kiwi")
+character_vector
+
+logical_vector <- c(TRUE, FALSE, TRUE)
+logical_vector
+
 

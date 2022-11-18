@@ -65,4 +65,5 @@ cycleway_Delft_lengths <- cycleway_Delft %>%
 cycleway_Delft_lengths %>% 
   summarise(total_length = sum(length))
 
-
+ggplot(data = cycleway_Delft) %>% 
+  geom_sf() +

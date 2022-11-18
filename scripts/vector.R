@@ -60,12 +60,12 @@ nrow(cycleway_Delft)
 nrow(lines_Delft)
 
 cycleway_Delft_lengths <- cycleway_Delft %>% 
-  mutate(length = st_length(.))
+  mutate(length = st_length(cycleway_Delft))
 
 cycleway_Delft_lengths %>% 
   summarise(total_length = sum(length))
 
-ggplot(data = cycleway_Delft) %>% 
+ggplot(data = cycleway_Delft) + 
   geom_sf() +
   ggtitle("Slow mobility network of Delft", subtitle = "Cycleways") +
   coord_sf(datum = st_crs(28992))

@@ -168,8 +168,9 @@ gapminder %>%
   coord_flip() +
   scale_fill_manual(values = c("light blue", "orange"))
 
-plot_d +
+plot_d <-plot_d +
   ggtitle("GDP per capita in Americas", subtitle = "year 2007")+
   xlab("Country")+
   ylab("GDP per capita")
+
 

@@ -209,3 +209,7 @@ ggplot() +
                                                              color = "black"))) + 
   ggtitle("Road network and leisure") + 
   coord_sf()
+
+# Handling spatial projections ----
+
+

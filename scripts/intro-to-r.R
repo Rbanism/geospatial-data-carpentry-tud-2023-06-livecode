@@ -157,3 +157,15 @@ plot_c <- gapminder %>%
   scale_fill_viridis_c()
 
 plot_c
+
+
+gapminder %>%
+  filter(year == 2007 & continent == "Americas") %>%
+  mutate(country = fct_reorder(country, gdpPercap),
+         lifeExp_b = if_else(lifeExp >= median(lifeExp),"high", "low" ) ) %>%
+  ggplot(aes(x = country, y = gdpPercap, fill = lifeExp)) +
+  geom_col() + 
+  coord_flip() +
+  scale_fill_viridis_c()
+
+

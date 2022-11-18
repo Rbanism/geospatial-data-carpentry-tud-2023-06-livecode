@@ -255,3 +255,13 @@ ggplot() +
   theme(legend.background = element_rect(color = NA)) +
   coord_sf()
 
+boundary_ZH_union <- st_union(boundary_ZH)
+
+ggplot() +
+  geom_sf(data = boundary_ZH_union)
+
+# Export a shapefile ----
+
+st_write(leisure_locations_selection,
+         here("data_output", "leisure_locations_selection.shp"),
+         driver = "ESRI Shapefile")

@@ -156,3 +156,11 @@ ggplot() +
   coord_sf()
 
 # Plot multiple shapefiles ----
+
+ggplot() +
+  geom_sf(data = boundary_Delft, fill = "grey", colour = "grey")
+
+
+
+
+

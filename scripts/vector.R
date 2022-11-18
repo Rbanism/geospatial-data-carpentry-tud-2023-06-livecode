@@ -136,6 +136,8 @@ ggplot(data = lines_Delft_selection) +
   scale_color_manual(values = road_colors) +
   scale_size_manual(values = line_widths) +
   coord_sf(datum = st_crs(28992)) +
-  ggtitle("Mobility network of Delft")
+  ggtitle("Mobility network of Delft",
+          subtitle = "Roads and Cycleways") +
+  labs(color = "Road Types", size = "Road Types")
 
 

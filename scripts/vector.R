@@ -158,7 +158,9 @@ ggplot() +
 # Plot multiple shapefiles ----
 
 ggplot() +
-  geom_sf(data = boundary_Delft, fill = "grey", colour = "grey")
+  geom_sf(data = boundary_Delft, fill = "grey", colour = "grey") +
+  geom_sf(data = lines_Delft_selection, aes(color = highway), size = 1) +
+  geom_sf(data = point_Delft)
 
 
 

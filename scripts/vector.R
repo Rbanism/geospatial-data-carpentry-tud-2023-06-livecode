@@ -155,4 +155,4 @@ ggplot() +
   ggtitle("Mobility network of Delft", subtitle = "Roads dedicated to bikes") +
   coord_sf()
 
-
+# Plot multiple shapefiles ----

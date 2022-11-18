@@ -145,6 +145,8 @@ gapminder_gdp <- gapminder %>%
 head(gapminder_gdp)
 
 # Intro to Visualisation -----
-ggplot(data = gapminder)
+ggplot(data = gapminder, aes(x = lifeExp)) +
+  geom_histogram()
+  
 
 

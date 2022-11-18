@@ -14,4 +14,7 @@ here("data", "tud-dsm.tif")
 
 # downloading data -----
 
-download.file("bit.ly/")
+download.file("bit.ly/GeospatialGapminder", 
+              here("data", "gapminder_data.csv"),
+              
+              )

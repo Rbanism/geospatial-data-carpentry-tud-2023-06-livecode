@@ -125,5 +125,6 @@ head(year_country_lifeExp_Africa)
 # group & summarize 
 
 gapminder %>%
-  group_by(continent) %>%
+  group_by(continent, year) %>%
   summarize(avg_gdpPercap = mean(gdpPercap) )
+

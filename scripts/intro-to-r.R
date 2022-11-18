@@ -9,3 +9,7 @@ print("hello world")
 library(tidyverse)
 library(here)
 
+here()
+here("data", "tud-dsm.tif")
+
+

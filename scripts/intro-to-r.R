@@ -12,4 +12,6 @@ library(here)
 here()
 here("data", "tud-dsm.tif")
 
+# downloading data -----
+
 

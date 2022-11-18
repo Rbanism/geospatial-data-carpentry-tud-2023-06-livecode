@@ -90,7 +90,7 @@ motorway_Delft <- lines_Delft %>%
   filter(highway == "motorway")
 
 motorway_Delft %>% 
-  mutate(length = st_length(.)) %>% 
+  mutate(length = st_length(motorway_Delft)) %>% 
   select(everything(), geometry) %>%
   summarise(total_length = sum(length))
 

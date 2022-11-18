@@ -90,6 +90,6 @@ str(gapminder)
 head(gapminder)
 summary(gapminder)
 
-
+# data manipulation ---- 
 
 

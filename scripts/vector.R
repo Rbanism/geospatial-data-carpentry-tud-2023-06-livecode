@@ -235,5 +235,6 @@ st_crs(boundary_Delft)
 ggplot() +
   geom_sf(data = country_boundary_NL, color = "gray18", size = 2) +
   geom_sf(data = municipal_boundary_NL, color = "gray40") +
+  geom_sf(data = boundary_Delft, color = "purple", fill = "purple") +
   ggtitle("Map of Contiguouse NL Municipal Boundaries") +
   coord_sf(datum = st_crs(28992))

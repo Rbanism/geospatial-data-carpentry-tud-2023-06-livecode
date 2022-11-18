@@ -70,4 +70,43 @@ ggplot(data = cycleway_Delft) +
   ggtitle("Slow mobility network of Delft", subtitle = "Cycleways") +
   coord_sf(datum = st_crs(28992))
 
+# Challenge 2
 
+ncol(point_Delft)
+ncol(boundary_Delft)
+
+head(point_Delft)
+head(point_Delft, 10)
+
+point_Delft
+
+names(point_Delft)
+
+# Challenge 3
+
+levels(factor(lines_Delft$highway))
+
+motorway_Delft <- lines_Delft %>% 
+  filter(highway == "motorway")
+
+motorway_Delft %>% 
+  mutate(length = st_length(.)) %>% 
+  select(everything(), geometry) %>%
+  summarise(total_length = sum(length))
+
+nrow(motorway_Delft)
+
+ggplot(data = motorway_Delft) +
+  geom_sf(size = 1.5) +
+  ggtitle("Mobility network of Delft", subtitle = "Motorways") +
+  coord_sf()
+
+pedestrian_Delft <- lines_Delft %>% 
+  filter(highway == "pedestrian")
+
+nrow(pedestrian_Delft)
+
+ggplot(data = pedestrian_Delft) +
+  geom_sf() +
+  ggtitle("Slow mobility network of Delft", subtitle = "Pedestrian") +
+  coord_sf()

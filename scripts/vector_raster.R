@@ -99,5 +99,10 @@ centroids_per_buffer <- centroids_in_buffers %>%
 single_buffers$n_centroids <- centroids_per_buffer$n
 
 ggplot() +
-  geom_sf(data = single_buffers, aes(fill=n_centroids))
+  geom_sf(data = single_buffers, aes(fill=n_centroids)) +
+  scale_fill_viridis_c(alpha=0.8,
+                       begin=0.6,
+                       end=1,
+                       direction=-1,
+                       option="B")
 

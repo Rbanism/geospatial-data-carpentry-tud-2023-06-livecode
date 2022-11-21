@@ -213,3 +213,8 @@ str(RGB_stack_TUD_df)
 
 plotRGB(RGB_stack_TUD,
         r = 1, g = 2, b = 3)
+
+plotRGB(RGB_stack_TUD,
+        r = 1, g = 2, b = 3,
+        scale = 800,
+        stretch = "lin")

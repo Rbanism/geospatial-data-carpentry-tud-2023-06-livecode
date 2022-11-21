@@ -63,3 +63,6 @@ old <- 1800
 
 old_buildings <- buildings |>
   filter(start_date <= old)
+
+
+st_buffer(old_buildings)

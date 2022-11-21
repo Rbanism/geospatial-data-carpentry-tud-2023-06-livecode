@@ -207,3 +207,9 @@ RGB_stack_TUD@layers
 
 RGB_stack_TUD[[2]]
 
+RGB_stack_TUD_df <- as.data.frame(RGB_stack_TUD, xy = TRUE)
+
+str(RGB_stack_TUD_df)
+
+plotRGB(RGB_stack_TUD,
+        r = 1, g = 2, b = 3)

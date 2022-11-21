@@ -49,4 +49,28 @@ ggplot() +
 ggplot() +
   geom_histogram(data = DSM_TUD_df, aes(tud.dsm), bins = 40)
 
-# 
+# Challenge 1 
+
+# Use `GDALinfo()` to determine the following about the `tud-dsm-hill.tif` file:
+#   
+#   1. Does this file have the same CRS as `DSM_TUD`?
+#   2. What is resolution of the raster data?
+#   3. How large would a 5x5 pixel area be on the Earth’s surface?
+#   4. Is the file a multi- or single-band raster?
+
+GDALinfo(here("data","tud-dsm-hill.tif"))
+
+
+# 2. Plot raster data ----
+
+DSM_TUD_df <- DSM_TUD_df %>%
+  mutate(fct_elevation = cut(tud.dsm, breaks = 3))
+
+ggplot() +
+  geom_bar(data = DSM_TUD_df, aes(fct_elevation))
+
+unique(DSM_TUD_df$fct_elevation)
+
+DSM_TUD_df %>%
+  group_by(fct_elevation) %>%
+  count()

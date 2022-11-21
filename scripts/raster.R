@@ -66,7 +66,9 @@ DSM_TUD_df <- DSM_TUD_df %>%
   mutate(fct_elevation = cut(tud.dsm, breaks = 3))
 
 DSM_TUD_df <- DSM_TUD_df %>% 
-  select(-`fct_elevation <- cut(tud.dsm, breaks = 3)`)
+  dplyr::select(-`fct_elevation <- cut(tud.dsm, breaks = 3)`)
   
 str(DSM_TUD_df)
-  
+
+ggplot() +
+  geom_bar(data = DSM_TUD_df, aes(fct_elevation))

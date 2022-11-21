@@ -131,6 +131,11 @@ DTM_hill_TUD_df <- as.data.frame(DTM_hill_TUD, xy = TRUE)
 
 
 
+
+
+
+
+
 ggplot() +
   geom_raster(data = DTM_TUD_df,
               aes(x = x, y = y,

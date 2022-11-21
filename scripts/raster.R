@@ -59,3 +59,11 @@ ggplot() +
 #   4. Is the file a multi- or single-band raster?
 
 GDALinfo(here("data","tud-dsm-hill.tif"))
+
+# Plot raster data ----
+
+DSM_TUD_df <- DSM_TUD_df %>% 
+  mutate(fct_elevat)
+  
+  
+  

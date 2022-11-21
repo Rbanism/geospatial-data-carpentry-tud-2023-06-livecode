@@ -76,3 +76,4 @@ ggplot() +
 DSM_TUD_df %>% 
   group_by(fct_elevation) %>% 
   count()
+

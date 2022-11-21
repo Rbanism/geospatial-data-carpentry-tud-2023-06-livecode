@@ -107,14 +107,6 @@ ggplot() +
                        direction=-1,
                        option="B")
 
-ggplot() +
-  geom_sf(data = single_buffers, aes(fill=n_centroids)) +
-  geom_sf(data=buildings, fill=NA) +
-  scale_fill_viridis_c(alpha=1,
-                       begin=0.6,
-                       end=1,
-                       direction=-1,
-                       option="B")
 #install.packages("units")
 #library(units)
 
@@ -123,3 +115,12 @@ single_buffers$area <- single_buffers %>%
 
 single_buffers$old_building_density <- 
   single_buffers$n_centroids / single_buffers$area
+
+ggplot() +
+  geom_sf(data=old_buildings) +
+  geom_sf(data = single_buffers, aes(fill=n_centroids)) +
+  scale_fill_viridis_c(alpha=0.4,
+                       begin=0.6,
+                       end=1,
+                       direction=-1,
+                       option="B")

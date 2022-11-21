@@ -99,6 +99,6 @@ ggplot() +
   scale_fill_manual(values = my_col) +
   coord_quickmap()
   
-
+# Layering rasters ----
 
 

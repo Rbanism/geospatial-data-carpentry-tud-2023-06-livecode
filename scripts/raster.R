@@ -30,5 +30,8 @@ plot(DSM_TUD)
 # View CRS 
 crs(DSM_TUD)
 
+# Calculate the Min and Max value of a raster
+minValue(DSM_TUD)
+maxValue(DSM_TUD)
 
-
+setMinMax

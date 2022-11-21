@@ -18,4 +18,8 @@ summary(DSM_TUD)
 summary(DSM_TUD, maxsamp = ncell(DSM_TUD))
 
 DSM_TUD_df <- as.data.frame(DSM_TUD, xy = TRUE)
-str()
+str(DSM_TUD_df)
+
+
+
+

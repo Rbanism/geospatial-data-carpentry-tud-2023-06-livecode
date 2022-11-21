@@ -145,6 +145,7 @@ ggplot() +
 DTM_hill_TUD_EPSG28992 <- projectRaster(DTM_hill_TUD, 
                                         crs = crs(DTM_TUD), 
                                         res = res(DTM_TUD))
+DTM_hill_TUD_EPSG28992_df <- as.data.frame(DTM_hill_TUD_EPSG28992, xy = TRUE)
 
 res(DTM_hill_TUD_EPSG28992)
 

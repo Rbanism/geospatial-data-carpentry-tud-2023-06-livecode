@@ -28,6 +28,7 @@ buildings <- x$osm_polygons %>%
 
 
 str(buildings$start_date)
+min(buildings$start_date, na.rm=TRUE)
 
 buildings$start_date <- as.numeric(buildings$start_date)
 

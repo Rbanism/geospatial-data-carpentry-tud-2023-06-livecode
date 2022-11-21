@@ -48,6 +48,14 @@ ggplot() +
 
 # Conservation in Delft ------
 
+bb <- getbb("Delft", format_out = "sf_polygon")
 
+x <- opq(bbox = bb) |>
+  add_osm_feature(key = "building") |>
+  osmdata_sf()
 
+buildings <- x$osm_polygons %>% 
+  st_transform(.,28992)
+
+buildings$start_date <- as.numeric(buildings$start_date)
 

@@ -39,3 +39,5 @@ DSM_TUD <- raster::setMinMax(DSM_TUD)
 minValue(DSM_TUD)
 maxValue(DSM_TUD)
 
+# Raster bands
+nlayers(DSM_TUD)

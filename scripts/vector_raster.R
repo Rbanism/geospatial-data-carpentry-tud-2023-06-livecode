@@ -31,11 +31,17 @@ str(buildings$start_date)
 
 buildings$start_date <- as.numeric(buildings$start_date)
 
+buildings$start_date_simplified <- 
+  ifelse(buildings$start_date <= 1900, 1900, 
+         buildings$start_date)
+
 
 ggplot() +
   geom_sf(data = buildings, 
-          aes(fill = start_date, colour= start_date)) +
+          aes(fill = start_date_simplified, 
+              colour= start_date_simplified)) +
   scale_fill_viridis_c(option="viridis") +
+  scale_colour_viridis_c(option="viridis") +
   coord_sf(datum=st_crs(28992))
 
 

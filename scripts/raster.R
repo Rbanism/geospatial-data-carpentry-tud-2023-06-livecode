@@ -10,3 +10,10 @@ library(rgdal)
 # View attributes
 GDALinfo(here("data", "tud-dsm.tif"))
 
+# Open a raster
+DSM_TUD <- raster(here("data", "tud-dsm.tif"))
+
+
+
+
+

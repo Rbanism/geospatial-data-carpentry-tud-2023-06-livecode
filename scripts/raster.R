@@ -45,3 +45,8 @@ nlayers(DSM_TUD)
 # Histogram
 ggplot() +
   geom_histogram(data = DSM_TUD_df, aes(tud.dsm))
+
+ggplot() +
+  geom_histogram(data = DSM_TUD_df, aes(tud.dsm), bins = 40)
+
+# 

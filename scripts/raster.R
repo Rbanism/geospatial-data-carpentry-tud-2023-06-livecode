@@ -181,3 +181,40 @@ writeRaster(CHM_TUD, here("data_output", "CHM_TUD.tif"),
             overwrite = TRUE,
             NAflag = -9999)
 
+# Working with multi-band rasters
+
+RGB_band1_TUD <- raster(here("data", "tudlib-rgb.tif"))
+  
+RGB_band1_TUD_df <- as.data.frame(RGB_band1_TUD, xy = TRUE)
+
+str(RGB_band1_TUD_df)
+
+ggplot() +
+  geom_raster(data = RGB_band1_TUD_df,
+              aes(x = x, y = y,
+                  alpha = tudlib.rgb)) +
+  coord_equal()
+
+RGB_band1_TUD
+
+# Raster stack
+
+RGB_stack_TUD <- stack(here("data", "tudlib-rgb.tif"))
+
+RGB_stack_TUD
+
+RGB_stack_TUD@layers
+
+RGB_stack_TUD[[2]]
+
+RGB_stack_TUD_df <- as.data.frame(RGB_stack_TUD, xy = TRUE)
+
+str(RGB_stack_TUD_df)
+
+plotRGB(RGB_stack_TUD,
+        r = 1, g = 2, b = 3)
+
+plotRGB(RGB_stack_TUD,
+        r = 1, g = 2, b = 3,
+        scale = 800,
+        stretch = "lin")

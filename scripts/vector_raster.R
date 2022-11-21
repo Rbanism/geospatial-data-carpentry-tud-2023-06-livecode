@@ -1,4 +1,4 @@
-#### ---- OSM data
+#### ---- OSM data Extraction
 
 library(tidyverse)
 library(here)
@@ -10,4 +10,12 @@ library(remotes)
 remotes::install_github("ropensci/osmdata")
 library(osmdata)
 
+bb <- getbb("Delft", format_out = "sf_polygon")
+bb
+
+x <- opq(bbox = bb) |>
+  add_osm_feature(key = "building") |>
+  osmdata_sf()
+
+assign("has_internet_via_proxy", TRUE, environment(curl::has_internet))
 

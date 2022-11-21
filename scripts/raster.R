@@ -41,3 +41,6 @@ maxValue(DSM_TUD)
 
 # Raster bands
 nlayers(DSM_TUD)
+
+# Histogram
+

@@ -82,6 +82,7 @@ custom_bins <- c(-10, 0, 5, 100)
 head(DSM_TUD_df)
 
 DSM_TUD_df <- DSM_TUD_df %>% 
-  mutate()
+  mutate(fct_elevation_cb = cut(tud.dsm, breaks = custom_bins))
 
+head(DSM_TUD_df)
 

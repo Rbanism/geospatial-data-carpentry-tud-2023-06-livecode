@@ -86,3 +86,6 @@ DSM_TUD_df <- DSM_TUD_df %>%
 
 head(DSM_TUD_df)
 
+unique(DSM_TUD_df$fct_elevation_cb)
+
+ggplot()

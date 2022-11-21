@@ -122,3 +122,9 @@ ggplot() +
   ggtitle("DTM with Hillshade") +
   coord_quickmap()
 
+# Reprojecting raster data
+DTM_TUD <- raster(here("data", "tud-dtm.tif"))
+DTM_hill_TUD <- raster(here("data", "tud-dtm-hill"))
+  
+  
+  

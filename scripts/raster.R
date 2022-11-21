@@ -148,12 +148,13 @@ DTM_hill_TUD_EPSG28992 <- projectRaster(DTM_hill_TUD,
 DTM_hill_TUD_EPSG28992_df <- as.data.frame(DTM_hill_TUD_EPSG28992, xy = TRUE)
 
 res(DTM_hill_TUD_EPSG28992)
+str(DTM_hill_TUD_df)
 
 ggplot() +
   geom_raster(data = DTM_TUD_df,
               aes(x = x, y = y,
                   fill = tud.dtm)) +
-  geom_raster(data = DTM_hill_TUD_ETRS89_df,
+  geom_raster(data = DTM_hill_TUD_df,
               aes(x = x, y = y,
                   alpha = tud.dtm.hill)) +
   scale_fill_gradientn(name = "Elevation", colors = terrain.colors(10)) +

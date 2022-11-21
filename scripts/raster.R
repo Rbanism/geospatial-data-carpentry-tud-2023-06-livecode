@@ -139,3 +139,7 @@ ggplot() +
   geom_raster(data = DTM_hill_TUD_ETRS89_df,
               aes(x = x, y = y,
                   alpha = tud.dtm.hill)) +
+  scale_fill_gradientn(name = "Elevation", colors = terrain.colors(10)) +
+  coord_quickmap()
+
+  

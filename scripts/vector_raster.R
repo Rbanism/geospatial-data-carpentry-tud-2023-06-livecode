@@ -115,4 +115,11 @@ ggplot() +
                        end=1,
                        direction=-1,
                        option="B")
+#install.packages("units")
+#library(units)
 
+single_buffers$area <- single_buffers %>%
+  st_area(.) %>% units::set_units(.,km^2)
+
+single_buffers$old_building_density <- 
+  single_buffers$n_centroids / single_buffers$area

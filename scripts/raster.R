@@ -159,3 +159,18 @@ ggplot() +
                   alpha = tud.dtm.hill)) +
   scale_fill_gradientn(name = "Elevation", colors = terrain.colors(10)) +
   coord_quickmap()
+
+# Raster math
+CHM_TUD <- DSM_TUD - DTM_TUD
+CHM_TUD_df <- as.data.frame(CHM_TUD, xy = TRUE)
+
+str(CHM_TUD_df)
+
+ggplot() +
+  geom_raster(data = CHM_TUD_df,
+              aes(x = x, y = y, fill = layer)) +
+  scale_fill_gradientn(name = "Canopy and building height", 
+                       colors = terrain.colors(10))
+
+
+

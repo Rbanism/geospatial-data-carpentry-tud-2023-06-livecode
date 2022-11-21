@@ -124,7 +124,7 @@ ggplot() +
 
 # Reprojecting raster data
 DTM_TUD <- raster(here("data", "tud-dtm.tif"))
-DTM_hill_TUD <- raster(here("data", "tud-dtm-hill-ETRS89.tif"))
+DTM_hill_TUD <- raster(here("data", "tud-dtm-hill.tif"))
   
 DTM_TUD_df <- as.data.frame(DTM_TUD, xy = TRUE)
 DTM_hill_TUD_df <- as.data.frame(DTM_hill_TUD, xy = TRUE)

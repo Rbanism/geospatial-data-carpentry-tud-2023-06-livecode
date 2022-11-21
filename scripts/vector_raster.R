@@ -84,3 +84,20 @@ ggplot(single_buffers) + geom_sf()
 sf::sf_use_s2(FALSE)
 centroids_old_buildings <- st_centroid(old_buildings) %>%
   st_transform(., crs=28992)
+
+ggplot() +
+  geom_sf(data=single_buffers, aes(fill=ID)) +
+  geom_sf(data=centroids_old_buildings)
+
+centroids_in_buffers <- st_intersection(centroids_old_buildings,
+                                        single_buffers) 
+
+centroids_per_buffer <- centroids_in_buffers %>%
+  group_by(ID) %>%
+  count()
+
+single_buffers$n_centroids <- centroids_per_buffer$n
+
+ggplot() +
+  geom_sf(data = single_buffers, aes(fill=n_centroids))
+

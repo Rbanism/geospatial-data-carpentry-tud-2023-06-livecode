@@ -176,5 +176,8 @@ ggplot() +
 ggplot(CHM_TUD_df) +
   geom_histogram(aes(layer))
 
-
+writeRaster(CHM_TUD, here("data_output", "CHM_TUD.tif"),
+            format = "GTiff",
+            overwrite = TRUE,
+            NAflag = -9999)
 

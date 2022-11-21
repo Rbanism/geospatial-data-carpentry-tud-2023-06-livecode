@@ -80,3 +80,7 @@ single_buffers <- single_buffers %>%
   st_transform(., crs=28992)
 
 ggplot(single_buffers) + geom_sf()
+
+sf::sf_use_s2(FALSE)
+centroids_old_buildings <- st_centroid(old_buildings) %>%
+  st_transform(., crs=28992)

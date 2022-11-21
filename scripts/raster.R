@@ -25,6 +25,10 @@ ggplot() +
   scale_fill_viridis_c() +
   coord_quickmap()
 
+plot(DSM_TUD)
+
+# View CRS 
+crs(DSM_TUD)
 
 
 

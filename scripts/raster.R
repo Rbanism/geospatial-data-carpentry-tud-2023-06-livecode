@@ -6,3 +6,7 @@ library(here)
 # install.packages("rgdal")
 library(raster)
 library(rgdal)
+
+# Wiew attributes
+GDALinfo(here("data", "tud-dsm.tif"))
+

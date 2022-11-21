@@ -111,14 +111,16 @@ ggplot() +
 #library(units)
 
 single_buffers$area <- single_buffers %>%
-  st_area(.) %>% units::set_units(.,km^2)
+  st_area(single_buffers) %>% units::set_units(.,km^2)
 
-single_buffers$old_building_density <- 
-  single_buffers$n_centroids / single_buffers$area
+single_buffers$old_building_density <- as.numeric(
+  single_buffers$n_centroids / single_buffers$area)
 
+summary(single_buffers$old_building_density)
 ggplot() +
   geom_sf(data=old_buildings) +
-  geom_sf(data = single_buffers, aes(fill=n_centroids)) +
+  geom_sf(data = single_buffers, aes(fill=old_building_density),
+          colour = NA) +
   scale_fill_viridis_c(alpha=0.4,
                        begin=0.6,
                        end=1,

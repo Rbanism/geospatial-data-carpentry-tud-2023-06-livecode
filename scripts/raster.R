@@ -63,7 +63,7 @@ GDALinfo(here("data","tud-dsm-hill.tif"))
 # Plot raster data ----
 
 DSM_TUD_df <- DSM_TUD_df %>% 
-  mutate(fct_elevat)
+  mutate(fct_elevation <- cut(tud.dsm, breaks = 3))
   
-  
+str(DSM_TUD_df)
   

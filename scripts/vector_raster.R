@@ -26,3 +26,6 @@ head(x)
 buildings <- x$osm_polygons %>% 
   st_transform(.,28992)
 
+ggplot() +
+  geom_sf(data = buildings, aes(fill = start_date))
+

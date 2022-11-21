@@ -77,3 +77,11 @@ DSM_TUD_df %>%
   group_by(fct_elevation) %>% 
   count()
 
+custom_bins <- c(-10, 0, 5, 100)
+
+head(DSM_TUD_df)
+
+DSM_TUD_df <- DSM_TUD_df %>% 
+  mutate()
+
+

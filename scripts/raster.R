@@ -91,8 +91,14 @@ unique(DSM_TUD_df$fct_elevation_cb)
 ggplot() +
   geom_bar(data = DSM_TUD_df, aes(fct_elevation_cb))
 
+my_col <- terrain.colors(3)
 
-
+ggplot() +
+  geom_raster(data = DSM_TUD_df, aes(x = x, y = y,
+                                     fill = fct_elevation_cb)) +
+  scale_fill_manual(values = my_col) +
+  coord_quickmap()
+  
 
 
 

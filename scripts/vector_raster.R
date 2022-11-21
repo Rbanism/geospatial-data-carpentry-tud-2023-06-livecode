@@ -59,4 +59,6 @@ buildings <- x$osm_polygons %>%
 
 buildings$start_date <- as.numeric(buildings$start_date)
 
+old <- 1800
 
+old_buildings <- 

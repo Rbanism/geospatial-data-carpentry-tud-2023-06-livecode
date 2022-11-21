@@ -101,6 +101,11 @@ ggplot() +
   
 # Layering rasters ----
 
-DTM_TUD <- raster(here("data", "tud-dts.tif"))
-DTM_
+DTM_TUD <- raster(here("data", "tud-dtm.tif"))
+DTM_TUD_df <- as.data.frame(DTM_TUD, xy = TRUE)
+
+DTM_hill_TUD <- raster(here("data", "tud-dtm-hill.tif"))
+DTM_hill_TUD_df <- as.data.frame(DTM_hill_TUD, xy = TRUE)
+
+ggplot()
 

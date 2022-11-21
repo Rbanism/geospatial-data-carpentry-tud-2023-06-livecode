@@ -20,4 +20,7 @@ x <- opq(bbox = bb) |>
   add_osm_feature(key = "building") |>
   osmdata_sf()
 
+head(x)
 
+
+buildings <- st_transform

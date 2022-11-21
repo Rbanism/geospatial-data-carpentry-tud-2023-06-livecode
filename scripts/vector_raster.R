@@ -38,3 +38,5 @@ ggplot() +
   scale_fill_viridis_c(option="viridis") +
   coord_sf(datum=st_crs(28992))
 
+
+min(buildings$start_date)

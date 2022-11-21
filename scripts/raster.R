@@ -202,3 +202,7 @@ RGB_band1_TUD
 RGB_stack_TUD <- stack(here("data", "tudlib-rgb.tif"))
 
 RGB_stack_TUD
+
+RGB_stack_TUD@layers
+
+

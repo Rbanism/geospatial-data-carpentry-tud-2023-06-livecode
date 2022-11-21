@@ -88,4 +88,11 @@ head(DSM_TUD_df)
 
 unique(DSM_TUD_df$fct_elevation_cb)
 
-ggplot()
+ggplot() +
+  geom_bar(data = DSM_TUD_df, aes(fct_elevation_cb))
+
+
+
+
+
+

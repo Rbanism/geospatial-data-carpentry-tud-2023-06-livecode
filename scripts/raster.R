@@ -107,5 +107,17 @@ DTM_TUD_df <- as.data.frame(DTM_TUD, xy = TRUE)
 DTM_hill_TUD <- raster(here("data", "tud-dtm-hill.tif"))
 DTM_hill_TUD_df <- as.data.frame(DTM_hill_TUD, xy = TRUE)
 
-ggplot()
+str(DTM_TUD_df)
+str(DTM_hill_TUD_df)
+
+ggplot() +
+  geom_raster(data = DTM_TUD_df,
+              aes(x = x, y = y,
+                  fill = tud.dtm)) +
+  geom_raster(data = DTM_hill_TUD_df,
+              aes(x = x, y = y,
+                  alpha = tud.dtm.hill)) +
+  scale_fill_viridis_c() +
+  scale_alpha(range = c(0.4, 0.7)) +
+  ggtitle()
 

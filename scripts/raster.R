@@ -173,5 +173,6 @@ ggplot() +
                        colors = terrain.colors(10)) +
   coord_quickmap()
 
-
+ggplot(CHM_TUD_df) +
+  geom_histogram(aes(layer))
 

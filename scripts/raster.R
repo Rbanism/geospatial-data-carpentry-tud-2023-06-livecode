@@ -126,17 +126,10 @@ ggplot() +
 DTM_TUD <- raster(here("data", "tud-dtm.tif"))
 DTM_hill_TUD <- raster(here("data", "tud-dtm-hill.tif"))
 
-DTM_hill_TUD_ETRS89 <- projectRaster(DTM_hill_TUD)
+DTM_hill_TUD_ETRS89 <- projectRaster(DTM_hill_TUD, crs = 4258)
 
 DTM_TUD_df <- as.data.frame(DTM_TUD, xy = TRUE)
-DTM_hill_TUD_df <- as.data.frame(DTM_hill_TUD, xy = TRUE)
-
-
-
-
-
-
-
+DTM_hill_TUD_ETRS89_df <- as.data.frame(DTM_hill_TUD_ETRS89, xy = TRUE)
 
 ggplot() +
   geom_raster(data = DTM_TUD_df,

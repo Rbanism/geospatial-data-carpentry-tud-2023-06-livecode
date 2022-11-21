@@ -101,4 +101,6 @@ ggplot() +
   
 # Layering rasters ----
 
+DTM_TUD <- raster(here("data", "tud-dts.tif"))
+DTM_
 

@@ -119,5 +119,6 @@ ggplot() +
                   alpha = tud.dtm.hill)) +
   scale_fill_viridis_c() +
   scale_alpha(range = c(0.4, 0.7)) +
-  ggtitle()
+  ggtitle("DTM with Hillshade") +
+  coord_quickmap()
 

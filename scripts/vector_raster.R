@@ -26,7 +26,15 @@ head(x)
 buildings <- x$osm_polygons %>% 
   st_transform(.,28992)
 
-ggplot() +
-  geom_sf(data = buildings, aes(fill = start_date))
 
-str()
+str(buildings$start_date)
+
+buildings$start_date <- as.numeric(buildings$start_date)
+
+
+ggplot() +
+  geom_sf(data = buildings, 
+          aes(fill = start_date, colour= start_date)) +
+  scale_fill_viridis_c(option="viridis") +
+  coord_sf(datum=st_crs(28992))
+

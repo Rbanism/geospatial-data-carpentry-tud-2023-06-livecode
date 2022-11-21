@@ -45,4 +45,3 @@ ggplot() +
   coord_sf(datum=st_crs(28992))
 
 
-min(buildings$start_date, na.rm=TRUE)

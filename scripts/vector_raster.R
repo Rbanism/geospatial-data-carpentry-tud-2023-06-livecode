@@ -60,9 +60,23 @@ buildings <- x$osm_polygons %>%
 buildings$start_date <- as.numeric(buildings$start_date)
 
 old <- 1800
+distance <- 500
 
 old_buildings <- buildings |>
   filter(start_date <= old)
 
+buffer_old_buildings <- st_buffer(old_buildings, 
+                                  dist = distance)
 
-st_buffer(old_buildings)
+ggplot(data = buffer_old_buildings) +
+  geom_sf()
+
+single_buffers <- st_union(buffer_old_buildings) |>
+  st_cast(to = "POLYGON") |>
+  st_as_sf()
+
+single_buffers <- single_buffers %>%
+  add_column("ID" = as.factor(1:nrow(.))) %>%
+  st_transform(., crs=28992)
+
+ggplot(single_buffers) + geom_sf()

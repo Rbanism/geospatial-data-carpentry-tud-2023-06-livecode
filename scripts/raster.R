@@ -7,6 +7,6 @@ library(here)
 library(raster)
 library(rgdal)
 
-# Wiew attributes
+# View attributes
 GDALinfo(here("data", "tud-dsm.tif"))
 

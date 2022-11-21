@@ -170,7 +170,8 @@ ggplot() +
   geom_raster(data = CHM_TUD_df,
               aes(x = x, y = y, fill = layer)) +
   scale_fill_gradientn(name = "Canopy and building height", 
-                       colors = terrain.colors(10))
+                       colors = terrain.colors(10)) +
+  coord_quickmap()
 
 
 

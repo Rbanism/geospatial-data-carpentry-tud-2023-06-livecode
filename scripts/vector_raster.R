@@ -59,3 +59,4 @@ buildings <- x$osm_polygons %>%
 
 buildings$start_date <- as.numeric(buildings$start_date)
 
+

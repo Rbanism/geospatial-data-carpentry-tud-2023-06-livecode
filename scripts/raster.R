@@ -20,6 +20,11 @@ summary(DSM_TUD, maxsamp = ncell(DSM_TUD))
 DSM_TUD_df <- as.data.frame(DSM_TUD, xy = TRUE)
 str(DSM_TUD_df)
 
+ggplot() +
+  geom_raster(data = DSM_TUD_df, aes(x = x, y = y, fill = tud.dsm)) +
+  scale_fill_ciridis_c() +
+  coord_quickmap()
+
 
 
 

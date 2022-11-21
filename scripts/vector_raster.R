@@ -23,4 +23,4 @@ x <- opq(bbox = bb) |>
 head(x)
 
 
-buildings <- st_transform
+buildings <- st_transform(x$osm_polygons,28992)

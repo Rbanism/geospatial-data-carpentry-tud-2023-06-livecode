@@ -142,4 +142,8 @@ ggplot() +
   scale_fill_gradientn(name = "Elevation", colors = terrain.colors(10)) +
   coord_quickmap()
 
-  
+DTM_hill_TUD_EPSG28992 <- projectRaster(DTM_hill_TUD, 
+                                        crs = crs(DTM_TUD), 
+                                        res = res(DTM_TUD))
+
+res(DTM_hill_TUD_EPSG28992)

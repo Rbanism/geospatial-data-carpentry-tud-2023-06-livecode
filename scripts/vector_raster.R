@@ -107,3 +107,12 @@ ggplot() +
                        direction=-1,
                        option="B")
 
+ggplot() +
+  geom_sf(data = single_buffers, aes(fill=n_centroids)) +
+  geom_sf(data=buildings, fill=NA) +
+  scale_fill_viridis_c(alpha=1,
+                       begin=0.6,
+                       end=1,
+                       direction=-1,
+                       option="B")
+

@@ -6,7 +6,7 @@ library(here)
 library(osmextract)
 library(sf)
 #install.packages("remotes")
-library(remotes)
+#library(remotes)
 #remotes::install_github("ropensci/osmdata")
 library(osmdata)
 

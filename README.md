@@ -8,6 +8,7 @@ The repository should mimic the project structure of the R project that has been
   - [intro-to-r.R](https://github.com/Rbanism/geospatial-data-carpentry-tud-2023-06-livecode/blob/main/data-carpentry/scripts/intro-to-r.R)
   - [vector.R](https://github.com/Rbanism/geospatial-data-carpentry-tud-2023-06-livecode/blob/main/data-carpentry/scripts/vector.R)
   - [raster.R](https://github.com/Rbanism/geospatial-data-carpentry-tud-2023-06-livecode/blob/main/data-carpentry/scripts/raster.R)
+  - [GIS.R](https://github.com/Rbanism/geospatial-data-carpentry-tud-2023-06-livecode/blob/main/data-carpentry/scripts/GIS.R)
 - You don't see the most recent lines of code? Refresh the page and  see the new commands coming in!
 
 > **Note**: 

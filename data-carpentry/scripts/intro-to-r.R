@@ -27,4 +27,4 @@ x
 y <- sqrt(x)
 y
 
-
+# Vectors 

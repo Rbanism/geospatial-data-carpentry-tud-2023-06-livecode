@@ -5,3 +5,5 @@
 library(here)
 library(tidyverse)
 
+here("data")
+

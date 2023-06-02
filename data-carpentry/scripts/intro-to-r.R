@@ -16,4 +16,13 @@ download.file("https://bit.ly/geospatial_data",
 1 + 100
 
 # Variables and assignment
+x <- 1/40
+x
 
+sqrt(x)
+
+x <- 100
+x
+
+y <- sqrt(x)
+y

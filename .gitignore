@@ -4,5 +4,6 @@
 .Ruserdata
 
 data/
+data-carpentry/data/
 
 .DS_Store

@@ -205,3 +205,4 @@ plot_d
 ggsave(plot = plot_d,
        filename = here("fig_output", "plot_americas_2007.pdf") )
 
+

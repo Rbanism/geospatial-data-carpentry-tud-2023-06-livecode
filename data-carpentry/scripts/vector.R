@@ -97,4 +97,8 @@ motorway_Delft %>%
   mutate(length = st_length(.)) %>% 
   summarise(total_length = sum(length))
 
-# CUSTOMIZE PLOTS
+# Customize plots
+
+levels(factor(lines_Delft$highway))
+
+

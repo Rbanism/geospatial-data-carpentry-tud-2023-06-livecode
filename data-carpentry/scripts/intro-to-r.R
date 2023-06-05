@@ -20,5 +20,5 @@ download.file("https:/bit.ly/geospatial_data",
 # variables 
 
 x <- 1/40
-
+x
 

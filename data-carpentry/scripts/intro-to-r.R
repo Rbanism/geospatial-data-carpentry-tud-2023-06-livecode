@@ -219,5 +219,8 @@ gapminder_amr_2007 <- gapminder %>%
          lifeExp_cat = if_else(lifeExp >= mean(lifeExp), 
                                "high", "low"))
 
+write.csv(gapminder_amr_2007, 
+          here("data_output", "gapminder_americas_2007.csv"),
+          row.names = FALSE)
 
 

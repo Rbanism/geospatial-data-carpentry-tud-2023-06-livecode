@@ -211,6 +211,9 @@ ggplot() +
   labs(title = "Traffic and leisure") + 
   coord_sf(datum = st_crs(28992))
 
+# Handling spatial projections and CRS
+
+municipal_boundaries_NL
 
 
 

@@ -162,5 +162,7 @@ gapminder %>%
   filter(year == 2007 & continent == "Americas") %>%
   ggplot(aes(x = country, y = gdpPercap)) +
   geom_col()
+
+
   
 

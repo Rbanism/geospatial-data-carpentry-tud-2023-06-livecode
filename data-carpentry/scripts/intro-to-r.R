@@ -56,3 +56,5 @@ with_na <- c(1 ,2 , 1, 1 , NA, 3 , NA)
 mean(with_na)
 
 mean(with_na, na.rm = TRUE)
+
+

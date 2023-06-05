@@ -117,3 +117,8 @@ ggplot(data = lines_Delft_selection) +
        color = "Road Type") +
   coord_sf(datum = st_crs(28992))
 
+# Adjust line width
+
+line_widths <- c(1, 0.75, 0.5, 0.25)
+
+ggplot()

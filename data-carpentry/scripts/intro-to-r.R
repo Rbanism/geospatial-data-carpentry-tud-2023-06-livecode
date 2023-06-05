@@ -153,7 +153,7 @@ gapminder_gdp <- gapminder %>%
 head(gapminder_gdp)
 
 
-Introduction to Data vis
+# Introduction to Data vis
 
 
 

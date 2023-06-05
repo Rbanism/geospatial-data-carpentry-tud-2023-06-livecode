@@ -149,6 +149,7 @@ ggplot(data = lines_Delft) +
 
 municipal_boundaries_NL <- st_read(here("data", "nl-gemeenten.shp"))
 
+str(municipal_boundaries_NL)
 
 
 

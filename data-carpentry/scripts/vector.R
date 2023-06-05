@@ -52,3 +52,5 @@ ncol(point_Delft)
 head(point_Delft)
 head(point_Delft, 10)
 
+unique(point_Delft$leisure)
+

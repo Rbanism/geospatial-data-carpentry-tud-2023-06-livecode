@@ -122,4 +122,4 @@ ggplot(data = lines_Delft_selection) +
 line_widths <- c(1, 0.75, 0.5, 0.25)
 
 ggplot(data = lines_Delft_selection) +
-  geom_sf()
+  geom_sf(aes(color = highway, size = highway))

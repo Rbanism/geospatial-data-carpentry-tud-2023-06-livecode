@@ -160,6 +160,7 @@ ggplot(data = municipal_boundaries_NL) +
   
 # Plot multiple shapefiles
 
-
+ggplot() +
+  
 
 

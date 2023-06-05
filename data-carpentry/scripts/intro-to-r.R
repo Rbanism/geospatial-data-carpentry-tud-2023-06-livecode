@@ -42,3 +42,4 @@ character_vector
 
 logical_vector <- c(TRUE, FALSE, TRUE)
 logical_vector
+

@@ -194,16 +194,15 @@ ggplot() +
 
 # Challenge 7
 
-leisure_locations_selection <- point_Delft %>% 
+leisure_locations_selection_2 <- point_Delft %>% 
   filter(leisure %in% c("playground", "picnic_table"))
 
-
-levels(factor(leisure_locations_selection$leisure))
+levels(factor(leisure_locations_selection_2$leisure))
 
 blue_orange <- c("cornflowerblue", "darkorange")
 ggplot() + 
   geom_sf(data = lines_Delft_selection, aes(color = highway)) + 
-  geom_sf(data = leisure_locations_selection, aes(fill = leisure), 
+  geom_sf(data = leisure_locations_selection_2, aes(fill = leisure), 
           shape = 21, show.legend = 'point') + 
   scale_color_manual(name = "Line Type", values = road_colors,
                      guide = guide_legend(override.aes = list(linetype = "solid", shape = NA))) + 

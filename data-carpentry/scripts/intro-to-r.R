@@ -109,7 +109,19 @@ year_country_gdp_noneur <- gapminder %>%
 
 head(year_country_gdp_noneur)
 
+year_country_gdp_eurasia <- gapminder %>%
+  filter(continent == "Europe" | continent == "Asia") %>%
+  select(year, country, gdpPercap)
+head(year_country_gdp_eurasia)
 
+
+# Exercise 1
+
+year_country_lifeExp_Africa <- gapminder %>%
+  filter(continent=="Africa"  ) %>%
+  select(year,country,lifeExp)
+
+nrow(year_country_lifeExp_Africa)
   
 
 

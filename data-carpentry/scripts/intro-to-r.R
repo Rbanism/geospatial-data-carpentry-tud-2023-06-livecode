@@ -122,6 +122,8 @@ year_country_lifeExp_Africa <- gapminder %>%
   select(year,country,lifeExp)
 
 nrow(year_country_lifeExp_Africa)
+
+
   
 
 

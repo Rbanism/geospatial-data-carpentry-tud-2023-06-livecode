@@ -123,6 +123,7 @@ year_country_lifeExp_Africa <- gapminder %>%
 
 nrow(year_country_lifeExp_Africa)
 
+# group by
 
   
 

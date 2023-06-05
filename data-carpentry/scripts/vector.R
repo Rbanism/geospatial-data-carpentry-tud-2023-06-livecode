@@ -145,4 +145,14 @@ ggplot(data = lines_Delft) +
   labs(title = "Mobility network in Delft", subtitle = "Roads dedicated to Bikes") +
   coord_sf(datum = st_crs(28992))
   
-  
+# A different map
+
+municipal_boundaries_NL <- st_read(here("data", "nl-gemeenten.nl"))
+
+
+
+
+
+
+
+

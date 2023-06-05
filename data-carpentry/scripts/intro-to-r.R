@@ -48,3 +48,8 @@ ab_vector
 
 abcd_vector <- c(ab_vector, "c", "d")
 abcd_vector
+
+
+# Missing values 
+
+ 

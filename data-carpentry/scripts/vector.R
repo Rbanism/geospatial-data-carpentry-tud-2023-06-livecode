@@ -192,6 +192,25 @@ ggplot() +
   labs(title = "Mobility network and leisure in Delft") +
   coord_sf(datum = st_crs(28992))
 
+# Challenge 7
+
+leisure_locations_selection <- st_read(here("data", "delft-leisure.shp")) %>% 
+  filter(leisure %in% c("playground", "picnic_table"))
+
+
+levels(factor(leisure_locations_selection$leisure))
+
+blue_orange <- c("cornflowerblue", "darkorange")
+ggplot() + 
+  geom_sf(data = lines_Delft_selection, aes(color = highway)) + 
+  geom_sf(data = leisure_locations_selection, aes(fill = leisure), 
+          shape = 21, show.legend = 'point') + 
+  scale_color_manual(name = "Line Type", values = road_colors,
+                     guide = guide_legend(override.aes = list(linetype = "solid", shape = NA))) + 
+  scale_fill_manual(name = "Soil Type", values = blue_orange,
+                    guide = guide_legend(override.aes = list(linetype = "blank", shape = 21, colour = NA))) + 
+  labs(title = "Traffic and leisure") + 
+  coord_sf(datum = st_crs(28992))
 
 
 

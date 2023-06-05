@@ -129,6 +129,8 @@ gapminder %>%
   group_by(continent) %>%
   summarize(avg_gdpPercap = mean(gdpPercap))
 
+
+
   
 
 

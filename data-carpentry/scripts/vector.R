@@ -59,3 +59,13 @@ head(point_Delft$leisure, 10)
 
 levels(factor(point_Delft$leisure))
 
+# Subset features
+
+levels(factor(lines_Delft$highway))
+
+cycleway_Delft <- lines_Delft %>% 
+  filter(highway == "cycleway")
+
+nrow(lines_Delft)
+nrow(cycleway_Delft)  
+  

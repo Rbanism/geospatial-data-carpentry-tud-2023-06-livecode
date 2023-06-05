@@ -112,5 +112,8 @@ road_colors <- c("blue", "green", "navy", "purple")
 ggplot(data = lines_Delft_selection) +
   geom_sf(aes(color = highway)) +
   scale_color_manual(values = road_colors) +
-  labs(title = "Road Type",
-       )
+  labs(title = "Road network of Delft",
+       subtitle = "Roads & Cycleways",
+       color = "Rad Type") +
+  coord_sf(datum = st_crs(28992))
+

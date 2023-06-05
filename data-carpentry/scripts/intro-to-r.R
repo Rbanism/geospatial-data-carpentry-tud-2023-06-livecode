@@ -76,3 +76,5 @@ nordic_cat
 
 levels(nordic_cat)
 nlevels(nordic_cat)
+
+

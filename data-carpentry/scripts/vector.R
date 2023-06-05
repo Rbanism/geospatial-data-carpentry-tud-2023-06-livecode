@@ -15,3 +15,16 @@ st_crs(boundary_Delft)
 st_bbox(boundary_Delft)
 
 boundary_Delft
+
+# Plot a shapefile
+
+ggplot(data = boundary_Delft) +
+  geom_sf(size = 3, color = "black", fill = "cyan1") +
+  labs(title)
+
+
+
+
+
+
+

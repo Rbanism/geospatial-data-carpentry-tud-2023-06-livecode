@@ -55,4 +55,7 @@ head(point_Delft, 10)
 # Explore values within one attribute
 
 unique(point_Delft$leisure)
+head(point_Delft$leisure, 10)
+
+levels(factor(point_Delft$leisure))
 

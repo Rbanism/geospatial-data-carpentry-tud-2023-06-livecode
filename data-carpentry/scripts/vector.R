@@ -78,4 +78,13 @@ cycleway_Delft %>%
 
 # Plot cycleways
 
-ggplot
+ggplot(data = cycleway_Delft) +
+  geom_sf() +
+  labs(title = "Slow mobility network in Delft", subtitle = "Cycleways") +
+  coord_sf(datum = st_crs(28992))
+
+
+
+
+
+

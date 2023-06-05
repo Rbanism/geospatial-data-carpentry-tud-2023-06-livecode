@@ -188,3 +188,6 @@ plot_d <-gapminder %>%
   scale_fill_manual(values = c("light blue", "orange"))
   
 plot_d
+
+
+

@@ -200,14 +200,13 @@ leisure_locations_selection_2 <- point_Delft %>%
 levels(factor(leisure_locations_selection_2$leisure))
 
 blue_orange <- c("cornflowerblue", "darkorange")
+
 ggplot() + 
   geom_sf(data = lines_Delft_selection, aes(color = highway)) + 
   geom_sf(data = leisure_locations_selection_2, aes(fill = leisure), 
-          shape = 21, show.legend = 'point') + 
-  scale_color_manual(name = "Line Type", values = road_colors,
-                     guide = guide_legend(override.aes = list(linetype = "solid", shape = NA))) + 
-  scale_fill_manual(name = "Soil Type", values = blue_orange,
-                    guide = guide_legend(override.aes = list(linetype = "blank", shape = 21, colour = NA))) + 
+          shape = 21) + 
+  scale_color_manual(name = "Line Type", values = road_colors) + 
+  scale_fill_manual(name = "Soil Type", values = blue_orange) + 
   labs(title = "Traffic and leisure") + 
   coord_sf(datum = st_crs(28992))
 

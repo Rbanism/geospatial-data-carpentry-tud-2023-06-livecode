@@ -107,6 +107,7 @@ year_country_gdp_noneur <- gapminder %>%
   filter(continent != "Europe" & year > 2000) %>%
   select(year, country, gdpPercap)
 
+head(year_country_gdp_noneur)
 
 
   

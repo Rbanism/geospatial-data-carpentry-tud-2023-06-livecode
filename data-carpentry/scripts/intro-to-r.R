@@ -198,3 +198,7 @@ plot_d <-plot_d +
   ylab("GDP per capita")
 
 plot_d
+
+
+
+

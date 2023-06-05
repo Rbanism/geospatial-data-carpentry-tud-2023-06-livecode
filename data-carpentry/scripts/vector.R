@@ -158,7 +158,7 @@ ggplot(data = municipal_boundaries_NL) +
   labs(title = "Contiguous NL Municipal Boundaries") +
   coord_sf(datum = st_crs(28992))
   
-  
+# Plot multiple shapefiles
 
 
 

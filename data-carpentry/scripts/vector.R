@@ -23,8 +23,7 @@ ggplot(data = boundary_Delft) +
   labs(title = "Delft Administrative Boundary") +
   coord_sf(datum = st_crs(28992))
 
-
-
+# Challenge 1
 
 
 

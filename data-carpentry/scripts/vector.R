@@ -215,7 +215,16 @@ ggplot() +
 
 municipal_boundaries_NL
 
+ggplot() +
+  geom_sf(data = municipal_boundaries_NL) +
+  labs(title = "Map of Contiguous NL Municipal Boundaries") +
+  coord_sf(datum = st_crs(28992))
 
+country_boundary_NL <- st_read(here("data", "nl-boundary.shp"))
 
+ggplot() +
+  geom_sf(data = municipal_boundaries_NL) +
+  labs(title = "Map of Contiguous NL Municipal Boundaries") +
+  coord_sf(datum = st_crs(28992))
 
 

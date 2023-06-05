@@ -176,5 +176,6 @@ plot_c <- gapminder %>%
 
 plot_c
 
+
   
 

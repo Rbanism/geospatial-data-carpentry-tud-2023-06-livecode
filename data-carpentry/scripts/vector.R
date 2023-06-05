@@ -41,4 +41,4 @@ head(lines_Delft)
 
 # Explore and plot by vector layer attributes
 
-nc
+ncol(lines_Delft)

@@ -130,5 +130,19 @@ ggplot(data = lines_Delft_selection) +
        color = "Road Type",
        linewidth = "Road Type") +
   coord_sf(datum = st_crs(28992))
+
+# Challenge 5
+
+# First, create a data frame with only those roads where bicycles are allowed
+lines_Delft_bicycle <- lines_Delft %>% 
+  filter(highway == "cycleway")
+
+# Next, visualise using ggplot
+ggplot(data = lines_Delft) +
+  geom_sf() +
+  geom_sf(data = lines_Delft_bicycle, aes(color = highway), linewidth = 1) +
+  scale_color_manual(values = "magenta") +
+  labs(title = "Mobility network in Delft", subtitle = "Roads dedicated to Bikes") +
+  coord_sf(datum = st_crs(28992))
   
   

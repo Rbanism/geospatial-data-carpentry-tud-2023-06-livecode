@@ -176,6 +176,12 @@ plot_c <- gapminder %>%
 
 plot_c
 
-
+plot_d <-gapminder %>%
+  filter(year == 2007 &
+           continent == "Americas") %>%
+  mutate(country = fct_reorder(country, gdpPercap),
+         lifeExp_cat = if_else(lifeExp >= mean(lifeExp), 
+                               "high", "low")) %>%
+  
   
 

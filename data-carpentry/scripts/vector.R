@@ -253,5 +253,8 @@ ggplot() +
   labs(title = "Delft location") +
   coord_sf(datum = st_crs(28992))
 
-st_write()
+st_write(leisure_locations_selection_2,
+         here("data_output", 
+              "leisure_locations_selection.shp"),
+         driver = "ESRI shapefile")
 

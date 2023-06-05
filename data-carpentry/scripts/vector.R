@@ -235,7 +235,7 @@ boundary_Delft <- st_read(here("data", "delft-boundary.shp"))
 
 ggplot() +
   geom_sf(data = municipal_boundaries_NL) +
-  geom_sf(data = boundary_Delft, fill = "purple", color = "purple")
+  geom_sf(data = boundary_Delft, fill = "purple", color = "purple") +
   labs(title = "Map of Contiguous NL Municipal Boundaries",
        subtitle = "Delft location") +
   coord_sf(datum = st_crs(28992))

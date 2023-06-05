@@ -224,6 +224,7 @@ country_boundary_NL <- st_read(here("data", "nl-boundary.shp"))
 
 ggplot() +
   geom_sf(data = municipal_boundaries_NL) +
+  # geom_sf(data = country_boundary_NL, color = "gray18", linewidth =2) +
   labs(title = "Map of Contiguous NL Municipal Boundaries") +
   coord_sf(datum = st_crs(28992))
 

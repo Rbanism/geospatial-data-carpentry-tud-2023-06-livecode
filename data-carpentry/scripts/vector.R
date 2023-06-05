@@ -194,7 +194,7 @@ ggplot() +
 
 # Challenge 7
 
-leisure_locations_selection <- st_read(here("data", "delft-leisure.shp")) %>% 
+leisure_locations_selection <- point_Delft %>% 
   filter(leisure %in% c("playground", "picnic_table"))
 
 

@@ -196,3 +196,5 @@ plot_d <-plot_d +
        )+
   xlab("Country")+
   ylab("GDP per capita")
+
+plot_d

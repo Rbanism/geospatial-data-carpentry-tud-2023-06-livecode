@@ -165,7 +165,7 @@ gapminder %>%
   coord_flip()
 
 
-gapminder %>%
+plot_c <- gapminder %>%
   filter(year == 2007 & 
            continent == "Americas") %>%
   mutate(country = fct_reorder(country, gdpPercap)) %>%

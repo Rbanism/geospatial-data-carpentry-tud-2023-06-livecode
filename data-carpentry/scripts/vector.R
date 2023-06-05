@@ -52,5 +52,7 @@ ncol(point_Delft)
 head(point_Delft)
 head(point_Delft, 10)
 
+# Explore values within one attribute
+
 unique(point_Delft$leisure)
 

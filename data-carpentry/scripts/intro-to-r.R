@@ -22,4 +22,4 @@ download.file("https:/bit.ly/geospatial_data",
 x <- 1/40
 x
 
-
+sqrt(x)

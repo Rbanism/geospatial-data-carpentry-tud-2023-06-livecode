@@ -205,7 +205,7 @@ plot_d
 ggsave(plot = plot_d,
        filename = here("fig_output", "plot_americas_2007.pdf"),
        height = 10,
-       width = 5,
+       width = 15,
        units = "cm")
 
 ?ggsave

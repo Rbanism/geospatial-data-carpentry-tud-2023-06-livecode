@@ -91,3 +91,6 @@ summary(gapminder)
 nrow(gapminder)
 ncol(gapminder)
 
+
+country_vec <- gapminder$country
+

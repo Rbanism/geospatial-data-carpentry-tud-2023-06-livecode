@@ -161,6 +161,12 @@ ggplot(data = municipal_boundaries_NL) +
 # Plot multiple shapefiles
 
 ggplot() +
-  
+  geom_sf(data = boundary_Delft, 
+          fill = "grey", color="grey") +
+  geom_sf(data = lines_Delft_selection, 
+          aes(color = highway), 
+          linewidth = 1) +
+  geom_sf(data = point_Delft) +
+  labs(title = "Mobility network of Delft")
 
 

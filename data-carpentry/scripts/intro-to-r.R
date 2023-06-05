@@ -63,3 +63,5 @@ is.na(with_na)
 
 without_na <- with_na[!is.na(with_na)]
 without_na
+
+

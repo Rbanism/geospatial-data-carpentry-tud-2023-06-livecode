@@ -97,7 +97,7 @@ head(country_vec)
 
 # Data manipulation
 
-
-
+year_country_gdp <- select(gapminder, year, country, gdpPercap)
+head(year_country_gdp)
 
 

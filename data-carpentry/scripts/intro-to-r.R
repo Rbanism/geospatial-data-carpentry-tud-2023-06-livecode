@@ -147,8 +147,10 @@ gapminder %>%
   group_by(continent, year) %>%
   count()
 
+gapminder_gdp <- gapminder %>%
+  mutate(gdpBillion = gdpPercap * pop / 10^9 )
 
-
+head(gapminder_gdp)
 
 
 

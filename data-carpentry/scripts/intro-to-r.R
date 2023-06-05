@@ -94,3 +94,8 @@ ncol(gapminder)
 
 country_vec <- gapminder$country
 head(country_vec)
+
+
+
+
+

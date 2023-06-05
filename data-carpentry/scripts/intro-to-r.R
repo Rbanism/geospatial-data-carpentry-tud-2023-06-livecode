@@ -182,6 +182,9 @@ plot_d <-gapminder %>%
   mutate(country = fct_reorder(country, gdpPercap),
          lifeExp_cat = if_else(lifeExp >= mean(lifeExp), 
                                "high", "low")) %>%
-  
+  ggplot(aes(x = country, y = gdpPercap, fill = lifeExp_cat))+
+  geom_col()+
+  coord_flip()+
+  scale_fill_manual(values = c("light blue", "orange"))
   
 

@@ -123,4 +123,12 @@ line_widths <- c(1, 0.75, 0.5, 0.25)
 
 ggplot(data = lines_Delft_selection) +
   geom_sf(aes(color = highway, linewidth = highway)) +
+  scale_color_manual(values = road_colors) +
+  scale_linewidth_manual(values = line_widths) +
+  labs(title = "Mobikity network of Delft",
+       subtitle = "Roads & Cycleways",
+       color = "Road Type",
+       linewidth = "Road Type") +
+  coord_sf(datum = st_crs(28992))
+  
   

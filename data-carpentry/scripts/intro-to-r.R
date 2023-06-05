@@ -203,6 +203,8 @@ plot_d
 # save plot 
 
 ggsave(plot = plot_d,
-       filename = here("fig_output", "plot_americas_2007.pdf") )
+       filename = here("fig_output", "plot_americas_2007.pdf"),
+       height = 10,
+       units = "cm")
 
-
+?ggsave

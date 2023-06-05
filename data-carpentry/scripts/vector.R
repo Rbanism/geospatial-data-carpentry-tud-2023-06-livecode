@@ -171,3 +171,4 @@ ggplot() +
   coord_sf(datum = st_crs(28992))
 
 
+levels(factor(point_Delft$leisure))

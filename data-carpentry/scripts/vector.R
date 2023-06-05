@@ -251,5 +251,4 @@ ggplot() +
   geom_sf(data = boundary_Delft, aes(shape = "shape"), color = "purple", fill = "purple") +
   scale_shape_manual(name = "", labels = "Municipality of Delft", values = c("shape" = 19)) +
   labs(title = "Delft location") +
-  theme(legend.background = element_rect(color = NA)) +
   coord_sf(datum = st_crs(28992))

@@ -190,4 +190,9 @@ plot_d <-gapminder %>%
 plot_d
 
 
-
+plot_d <-plot_d +
+  labs(title = "FDP per capita in Americas",
+       subtitle = "Year 2007"
+       )+
+  xlab("Country")+
+  ylab("GDP per capita")

@@ -155,5 +155,6 @@ head(gapminder_gdp)
 
 # Introduction to Data vis
 
-
+ggplot(data = gapminder, aes(x = lifeExp)) +
+  geom_histogram()
 

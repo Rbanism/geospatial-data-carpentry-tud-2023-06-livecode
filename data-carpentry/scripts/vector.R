@@ -114,6 +114,6 @@ ggplot(data = lines_Delft_selection) +
   scale_color_manual(values = road_colors) +
   labs(title = "Road network of Delft",
        subtitle = "Roads & Cycleways",
-       color = "Rad Type") +
+       color = "Road Type") +
   coord_sf(datum = st_crs(28992))
 

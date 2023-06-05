@@ -26,8 +26,12 @@ ggplot(data = boundary_Delft) +
 # Challenge 1
 
 lines_Delft <- st_read(here("data", "delft-streets.shp"))
-point_Delft <- st_read(here())
+point_Delft <- st_read(here("data", "delft-leisure.shp"))
 
+st_crs(lines_Delft)
+st_crs(point_Delft)
 
+st_crs(lines_Delft)$epsg
+st_crs(lines_Delft)$Name
 
-
+lines_Delft

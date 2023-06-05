@@ -184,7 +184,7 @@ ggplot() +
           linewidth = 0.75) +
   geom_sf(data = point_Delft,
           aes(fill = leisure),
-          shape = 21) +
+          shape = 22) +
   scale_color_manual(values = road_colors, 
                      name = "Road Type") +
   scale_fill_manual(values = leisure_colors,

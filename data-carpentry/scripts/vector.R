@@ -178,7 +178,7 @@ point_Delft$leisure <- factor(point_Delft$leisure)
 
 ggplot() +
   geom_sf(data = boundary_Delft, 
-          fill = "grey", linewidth = "grey") +
+          fill = "grey", color = "grey") +
   geom_sf(data = lines_Delft_selection,
           aes(color = highway),
           linewidth = 0.75) +

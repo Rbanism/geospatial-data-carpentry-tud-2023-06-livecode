@@ -210,3 +210,14 @@ ggsave(plot = plot_d,
 
 ?ggsave
 
+
+# Save the data
+gapminder_amr_2007 <- gapminder %>%
+  filter(year == 2007 &
+           continent == "Americas") %>%
+  mutate(country = fct_reorder(country, gdpPercap),
+         lifeExp_cat = if_else(lifeExp >= mean(lifeExp), 
+                               "high", "low"))
+
+
+

@@ -154,7 +154,11 @@ str(municipal_boundaries_NL)
 levels(factor(municipal_boundaries_NL$ligtInPr_1))
 
 ggplot(data = municipal_boundaries_NL) +
-  geom_sf(aes(color = ligtInPr_1))
+  geom_sf(aes(color = ligtInPr_1), linewidth = 1) +
+  labs(title = "Contiguous NL Municipal Boundaries") +
+  coord_sf(datum = st_crs(28992))
+  
+  
 
 
 

@@ -253,3 +253,5 @@ ggplot() +
   labs(title = "Delft location") +
   coord_sf(datum = st_crs(28992))
 
+st_write()
+

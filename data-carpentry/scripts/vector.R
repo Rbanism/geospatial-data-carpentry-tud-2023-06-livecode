@@ -205,7 +205,7 @@ ggplot() +
   geom_sf(data = lines_Delft_selection, aes(color = highway)) + 
   geom_sf(data = leisure_locations_selection_2, aes(fill = leisure), 
           shape = 21) + 
-  scale_color_manual(name = "Line Type", values = road_colors) + 
+  scale_color_manual(name = "Road Type", values = road_colors) + 
   scale_fill_manual(name = "Leisure Type", values = blue_orange) + 
   labs(title = "Traffic and leisure") + 
   coord_sf(datum = st_crs(28992))

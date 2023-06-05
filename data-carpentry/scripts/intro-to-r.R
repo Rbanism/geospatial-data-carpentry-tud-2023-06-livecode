@@ -174,5 +174,7 @@ plot_c <- gapminder %>%
   coord_flip()+
   scale_fill_viridis_c()
 
+plot_c
+
   
 

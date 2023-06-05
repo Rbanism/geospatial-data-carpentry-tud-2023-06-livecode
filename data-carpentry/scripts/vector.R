@@ -154,7 +154,7 @@ str(municipal_boundaries_NL)
 levels(factor(municipal_boundaries_NL$ligtInPr_1))
 
 ggplot(data = municipal_boundaries_NL) +
-  geom_sf()
+  geom_sf(aes(color = ligtInPr_1))
 
 
 

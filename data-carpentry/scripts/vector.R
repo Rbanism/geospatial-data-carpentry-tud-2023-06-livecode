@@ -151,8 +151,10 @@ municipal_boundaries_NL <- st_read(here("data", "nl-gemeenten.shp"))
 
 str(municipal_boundaries_NL)
 
+levels(factor(municipal_boundaries_NL$ligtInPr_1))
 
-
+ggplot(data = municipal_boundaries_NL) +
+  geom_sf()
 
 
 

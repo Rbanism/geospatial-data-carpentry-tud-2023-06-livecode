@@ -84,7 +84,17 @@ ggplot(data = cycleway_Delft) +
   coord_sf(datum = st_crs(28992))
 
 
+# Challenge 3
 
+levels(factor(lines_Delft$highway))
 
+motorway_Delft <- lines_Delft %>% 
+  filter(highway == "motorway")
 
+motorway_Delft
 
+motorway_Delft %>% 
+  mutate(length = st_length(.)) %>% 
+  summarise(total_length = sum(length))
+
+# CUSTOMIZE PLOTS

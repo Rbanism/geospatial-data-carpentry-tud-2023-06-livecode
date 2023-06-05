@@ -130,7 +130,12 @@ gapminder %>%
   summarize(avg_gdpPercap = mean(gdpPercap))
 
 
+#Exercise 2 
 
+gapminder %>%
+  group_by(country) %>%
+  summarize(avg_lifeExp = mean(lifeExp) ) %>%
+  filter(avg_lifeExp == min(avg_lifeExp) | avg_lifeExp == max(avg_lifeExp))
   
 
 

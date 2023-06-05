@@ -43,3 +43,8 @@ character_vector
 logical_vector <- c(TRUE, FALSE, TRUE)
 logical_vector
 
+ab_vector<- c("a", "b")
+ab_vector
+
+abcd_vector <- c(ab_vector, "c", "d")
+abcd_vector

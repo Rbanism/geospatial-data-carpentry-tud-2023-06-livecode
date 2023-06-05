@@ -187,4 +187,4 @@ plot_d <-gapminder %>%
   coord_flip()+
   scale_fill_manual(values = c("light blue", "orange"))
   
-
+plot_d

@@ -36,3 +36,5 @@ st_crs(lines_Delft)$Name
 
 lines_Delft
 point_Delft
+
+head(lines_Delft)

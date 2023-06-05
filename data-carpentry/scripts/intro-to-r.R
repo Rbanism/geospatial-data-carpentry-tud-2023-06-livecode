@@ -143,6 +143,9 @@ gapminder %>%
             avg_lifExp = mean(lifeExp)
   )
   
+gapminder %>%
+  group_by(continent, year) %>%
+  count()
 
 
 

@@ -42,5 +42,9 @@ head(lines_Delft)
 # Explore and plot by vector layer attributes
 
 ncol(lines_Delft)
-
 lines_Delft
+
+names(lines_Delft)
+
+
+

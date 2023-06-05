@@ -46,5 +46,9 @@ lines_Delft
 
 names(lines_Delft)
 
+# Challenge 2
 
+ncol(point_Delft)
+head(point_Delft)
+head(point_Delft, 10)
 

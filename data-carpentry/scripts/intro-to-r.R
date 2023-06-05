@@ -223,4 +223,5 @@ write.csv(gapminder_amr_2007,
           here("data_output", "gapminder_americas_2007.csv"),
           row.names = FALSE)
 
-
+plot_d +
+  theme_minimal()

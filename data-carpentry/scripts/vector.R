@@ -70,4 +70,5 @@ nrow(lines_Delft)
 nrow(cycleway_Delft)  
 
 cycleway_Delft <- cycleway_Delft %>% 
-  mutate(length <- )
+  mutate(length = st_length(.))
+cycleway_Delft

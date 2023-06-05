@@ -67,3 +67,5 @@ without_na
 
 # Factors
 
+nordic_str <- c("Norway", "Sweden", "Norway",
+                "Denmark", "Sweden")

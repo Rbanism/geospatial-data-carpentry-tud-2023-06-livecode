@@ -161,7 +161,7 @@ ggplot(data = gapminder, aes(x = lifeExp)) +
 gapminder %>%
   filter(year == 2007 & continent == "Americas") %>%
   ggplot(aes(x = country, y = gdpPercap)) +
-  geom_col()
+  geom_col() 
 
 
   

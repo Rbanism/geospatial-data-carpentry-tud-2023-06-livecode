@@ -252,3 +252,4 @@ ggplot() +
   scale_shape_manual(name = "", labels = "Municipality of Delft", values = c("shape" = 19)) +
   labs(title = "Delft location") +
   coord_sf(datum = st_crs(28992))
+

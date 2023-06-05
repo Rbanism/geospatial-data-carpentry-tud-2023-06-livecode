@@ -38,3 +38,7 @@ lines_Delft
 point_Delft
 
 head(lines_Delft)
+
+# Explore and plot by vector layer attributes
+
+nc

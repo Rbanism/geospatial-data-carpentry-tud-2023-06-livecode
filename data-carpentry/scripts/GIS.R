@@ -17,3 +17,5 @@ assign("has_internet_via_proxy", TRUE, environment(curl::has_internet))
 
 buildings <- x$osm_polygons %>%
   st_transform(., 28992)
+
+summary(buildings$start_date)

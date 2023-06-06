@@ -96,3 +96,8 @@ ggplot() +
 
 # Layering rasters
 
+DSM_hill_TUD <- raster(here("data", "tud-dsm-5m-hill.tif"))
+DSM_hill_TUD  
+
+
+  

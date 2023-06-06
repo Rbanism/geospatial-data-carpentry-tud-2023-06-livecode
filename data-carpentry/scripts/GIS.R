@@ -99,3 +99,24 @@ ggplot() +
     direction = -1,
     option = "B")
 
+final_zones$surface <- 
+  st_area(final_zones) %>%
+  units::set_units(.,km^2)
+
+final_zones$density <-
+  final_zones$N_buildings / 
+  final_zones$surface
+
+summary(final_zones$density)
+
+ggplot() +
+  geom_sf(data = buildings2) +
+  geom_sf(data = final_zones,
+          aes(fill = density),
+          colour = NA) + 
+  scale_fill_viridis_c(
+    alpha = 0.6,
+    begin = 0.6,
+    end = 1,
+    direction = -1,
+    option = "B")

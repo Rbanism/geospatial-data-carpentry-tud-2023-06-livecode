@@ -125,7 +125,16 @@ ggplot() +
 DTM_TUD <- raster(here("data", "tud-dtm-5m.tif"))
 DTM_hill_TUD <- raster(here("data", "tud-dtm-5m-hill-ETRS89.tif"))
 
-DTM_TUD_df <- as.data.frame(DTM_TUD)
-DTM_hill_TUD_df <- as.data.frame(DTM_hill_TUD)
+DTM_TUD_df <- as.data.frame(DTM_TUD, xy = TRUE)
+DTM_hill_TUD_df <- as.data.frame(DTM_hill_TUD, xy = TRUE)
 
+ggplot() +
+  geom_raster(data = DTM_TUD_df,
+              aes(x = x, y = y,
+                  fill = tud.dtm.5m)) +
+  geom_raster(data = DTM_hill_TUD_df,
+              aes(x = x, y = y,
+                  alpha = tud.dtm.5m.hill.ETRS89)) +
+  scale_fill_gradientn(name = "Elevation", colors = terrain.colors(10)) +
+  coord_quickmap()
 

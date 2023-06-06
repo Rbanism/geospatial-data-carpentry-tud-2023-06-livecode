@@ -41,3 +41,10 @@ leaflet(buildings2) %>%
  # addProviderTiles(provider = providers$CartoDB.Positron) %>%
   addPolygons(fillColor = 
                 ~colorQuantile("YlOrRd", build_date)(build_date))
+
+
+
+### GIS Operations
+
+
+

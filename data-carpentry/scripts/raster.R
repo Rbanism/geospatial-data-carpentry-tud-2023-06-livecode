@@ -119,3 +119,7 @@ ggplot() +
   scale_alpha(range = c(0.15, 0.65), guide = "none") +
   labs(title = "Elevation with hillshade") +
   coord_quickmap()
+
+# Reproject raster data
+
+DTM_TUD <- raster

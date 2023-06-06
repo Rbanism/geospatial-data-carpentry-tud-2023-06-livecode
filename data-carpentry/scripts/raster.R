@@ -39,4 +39,12 @@ maxValue(DSM_TUD)
 
 DSM_TUD <- raster::setMinMax(DSM_TUD)
 
+# Raster bands
+
+nlayers(DSM_TUD)
+
+# Histogram of raster values
+
+ggplot() +
+  geom_histogram(data = DSM_TUD_df, aes(tud.dsm.5m))
   

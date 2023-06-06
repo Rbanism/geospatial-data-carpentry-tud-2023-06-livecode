@@ -79,3 +79,23 @@ ggplot() +
 centroids_intersect_buffers <- 
   st_intersection(old_centroids, single_old_buffer) %>%
   mutate(n = 1)
+
+multipoint_blgds <- centroids_intersect_buffers %>%
+  group_by(ID) %>%
+  summarise(N_buildings = sum(n))
+
+final_zones <- single_old_buffer %>%
+  mutate(N_buildings = multipoint_blgds$N_buildings)
+
+ggplot() +
+  geom_sf(data = buildings) +
+  geom_sf(data = final_zones, 
+          aes(fill = N_buildings),
+          colour = NA) +
+  scale_fill_viridis_c(
+    alpha = 0.6,
+    begin = 0.6,
+    end = 1,
+    direction = -1,
+    option = "B")
+

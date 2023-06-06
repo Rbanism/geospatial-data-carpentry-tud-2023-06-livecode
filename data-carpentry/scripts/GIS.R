@@ -44,7 +44,17 @@ leaflet(buildings2) %>%
 
 
 
-### GIS Operations
+### GIS Operations - Conservation
+
+old <- 1800
+
+buildings %>% 
+  filter(as.numeric(start_date) <= old) %>%
+  ggplot() + 
+  geom_sf()
+  
+
+
 
 
 

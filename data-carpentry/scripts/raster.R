@@ -125,6 +125,7 @@ ggplot() +
 DTM_TUD <- raster(here("data", "tud-dtm-5m.tif"))
 DTM_hill_TUD <- raster(here("data", "tud-dtm-5m-hill-ETRS89.tif"))
 
-
+DTM_TUD_df <- as.data.frame(DTM_TUD)
+DTM_hill_TUD_df <- as.data.frame(DTM_hill_TUD)
 
 

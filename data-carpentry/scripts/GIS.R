@@ -48,11 +48,17 @@ leaflet(buildings2) %>%
 
 old <- 1800
 
-buildings %>% 
-  filter(as.numeric(start_date) <= old) %>%
-  ggplot() + 
+old_buildings <- buildings %>% 
+  filter(as.numeric(start_date) <= old) 
+  
+ggplot(old_buildings) + 
   geom_sf()
   
+distance <- 100
+
+buffer_old_bldgs <- 
+  st_buffer(x = old_buildings, dist = distance)
+
 
 
 

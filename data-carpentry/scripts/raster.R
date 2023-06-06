@@ -94,3 +94,5 @@ ggplot() +
   scale_fill_manual(values = terrain.colors(3), name = "Elevation") +
   coord_quickmap()
 
+# Layering rasters
+

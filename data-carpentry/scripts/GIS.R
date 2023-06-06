@@ -4,3 +4,4 @@ library(sf)
 library(osmdata)
 
 bb <- getbb("Brielle", format_out = "sf_polygon" )
+bb

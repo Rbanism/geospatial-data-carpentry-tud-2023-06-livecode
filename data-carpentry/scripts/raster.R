@@ -55,3 +55,12 @@ ggplot() +
 
 GDALinfo(here("data", "tud-dsm-5m-hill.tif"))
 
+# Plot Raster Data
+
+DSM_TUD_df <- DSM_TUD_df %>% 
+  mutate(fct_elevation = cut(tud.dsm.5m, breaks = 3))
+
+head(DSM_TUD_df)
+
+ggplot() +
+  geom_bar

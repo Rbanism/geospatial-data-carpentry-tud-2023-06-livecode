@@ -16,7 +16,7 @@ x <- opq(bbox = bbnl) %>%
 assign("has_internet_via_proxy", TRUE, environment(curl::has_internet))
 
 buildings <- x$osm_polygons %>%
-  st_transform(., 28992)
+  st_transform(28992)
 
 buildings$build_date <- 
  if_else(as.numeric(buildings$start_date) < 1900,

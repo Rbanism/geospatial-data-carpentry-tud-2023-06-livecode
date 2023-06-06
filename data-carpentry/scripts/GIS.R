@@ -59,8 +59,16 @@ distance <- 100
 buffer_old_bldgs <- 
   st_buffer(x = old_buildings, dist = distance)
 
+ggplot(buffer_old_bldgs) +
+  geom_sf()
 
+single_old_buffer <- st_union(buffer_old_bldgs) %>%
+  st_cast(to = "POLYGON") %>%
+  st_as_sf() %>%
+  mutate("ID" = as.factor(1:nrow(.)))
 
+ggplot(single_old_buffer) +
+  geom_sf()
 
 
 

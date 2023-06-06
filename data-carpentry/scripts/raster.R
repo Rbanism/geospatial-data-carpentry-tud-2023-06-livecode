@@ -122,4 +122,9 @@ ggplot() +
 
 # Reproject raster data
 
-DTM_TUD <- raster
+DTM_TUD <- raster(here("data", "tud-dtm-5m.tif"))
+DTM_hill_TUD <- raster(here("data", "tud-dtm-5m-hill-ETRS89.tif"))
+
+
+
+

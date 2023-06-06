@@ -175,11 +175,12 @@ DTM_hill_EPSG28992_TUD <- projectRaster(DTM_hill_TUD,
 DTM_hill_EPSG28992_TUD_df <- as.data.frame(DTM_hill_EPSG28992_TUD, xy = TRUE)
 
 head(DTM_hill_EPSG28992_TUD_df)
+head(DTM_TUD_df)
 
 ggplot() +
   geom_raster(data = DTM_TUD_df,
-              aes(x = x, y = y),
-              fill = tud.dtm.5m) +
+              aes(x = x, y = y,
+              fill = tud.dtm.5m)) +
   geom_raster(data = DTM_hill_EPSG28992_TUD_df,
               aes(x = x, y = y,
                   alpha = tud.dtm.5m.hill.ETRS89)) +

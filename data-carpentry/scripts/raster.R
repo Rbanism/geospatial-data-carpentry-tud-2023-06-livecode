@@ -38,5 +38,5 @@ minValue(DSM_TUD)
 maxValue(DSM_TUD)
 
 DSM_TUD <- raster::setMinMax(DSM_TUD)
-  
+
   

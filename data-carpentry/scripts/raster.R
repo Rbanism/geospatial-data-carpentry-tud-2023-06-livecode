@@ -224,4 +224,14 @@ ggplot() +
               aes(x =x, y = y, alpha = tudlib.rgb_1)) +
   coord_equal()
 
+# Raster stacks
 
+RGB_stack_TUD <- stack(here("data", "tudlib-rgb.tif"))
+
+RGB_stack_TUD@layers
+RGB_stack_TUD[[2]]
+
+# Create three-band image
+
+plotRGB(RGB_stack_TUD,
+        r = 1, g = 2, b = 3)

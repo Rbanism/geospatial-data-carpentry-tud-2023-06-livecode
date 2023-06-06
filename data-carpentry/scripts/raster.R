@@ -81,4 +81,6 @@ head(DSM_TUD_df)
 
 ggplot() +
   geom_raster(data = DSM_TUD_df, aes(x = x,
-                                     y = y))
+                                     y = y,
+                                     fill = fct_elevation_cb)) +
+  coord_quickmap()

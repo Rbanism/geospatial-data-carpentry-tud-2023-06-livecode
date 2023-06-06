@@ -13,4 +13,4 @@ GDALinfo(here("data", "tud-dsm-5m.tif"))
 DSM_TUD <- raster(here("data", "tud-dsm-5m.tif"))
 DSM_TUD
 
-
+summary(DSM_TUD)

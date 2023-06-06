@@ -210,3 +210,8 @@ writeRaster(CHM_TUD, here("fig_output", "CHM_TUD.tiff"),
             format = "GTiff",
             overwrite = TRUE,
             NAflag = -9999)
+
+# Multi-band rasters
+
+RGB_band1_TUD <- raster(here("data", "tudlib-rgb.tif"))
+

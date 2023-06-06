@@ -30,7 +30,7 @@ plot(DSM_TUD)
   
 # View Raster CRS
 
-
+crs(DSM_TUD)
   
   
   

@@ -1,4 +1,4 @@
 library(tidyverse)
 library(sf)
-install.packages("osmdata")
+#install.packages("osmdata")
 library(osmdata)

@@ -151,4 +151,16 @@ ggplot() +
               aes(x = x, y = y,
                   alpha = tud.dtm.5m.hill.ETRS89)) +
   coord_quickmap()
+
+# Reproject rasters
+
+DTM_hill_EPSG28992_TUD <- projectRaster(DTM_hill_TUD,
+                                        crs = crs(DTM_TUD))
   
+crs(DTM_hill_EPSG28992_TUD)
+crs(DTM_TUD)
+
+compareCRS(DTM_hill_EPSG28992_TUD, DTM_TUD)
+
+extent(DTM_hill_EPSG28992_TUD)
+extent(DTM_TUD)

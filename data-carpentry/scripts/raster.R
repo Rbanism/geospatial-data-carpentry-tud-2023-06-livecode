@@ -234,4 +234,7 @@ RGB_stack_TUD[[2]]
 # Create three-band image
 
 plotRGB(RGB_stack_TUD,
-        r = 1, g = 2, b = 3)
+        r = 1, g = 2, b = 3,
+        stretch = "lin")
+
+

@@ -32,7 +32,9 @@ plot(DSM_TUD)
 
 crs(DSM_TUD)
 
+# Min and Max values
 
+minValue(DSM_TUD)
   
   
   

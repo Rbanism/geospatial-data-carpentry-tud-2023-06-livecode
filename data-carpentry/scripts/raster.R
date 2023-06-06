@@ -112,4 +112,8 @@ ggplot() +
   geom_raster(data = DSM_TUD_df,
               aes(x = x, y = y,
                   fill = tud.dsm.5m)) +
-  geom
+  geom_raster(data = DSM_hill_TUD_df,
+              aes(x = x, y = y,
+                  alpha = tud.dsm.5m.hill)) +
+  scale_fill_viridis_c() +
+  

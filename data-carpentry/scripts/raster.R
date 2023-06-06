@@ -164,3 +164,10 @@ compareCRS(DTM_hill_EPSG28992_TUD, DTM_TUD)
 
 extent(DTM_hill_EPSG28992_TUD)
 extent(DTM_TUD)
+
+res(DTM_hill_EPSG28992_TUD)
+res(DTM_TUD)
+
+DTM_hill_EPSG28992_TUD <- projectRaster(DTM_hill_TUD,
+                                        crs = crs(DTM_TUD),
+                                        res = res(DTM_TUD))

@@ -84,3 +84,8 @@ ggplot() +
                                      y = y,
                                      fill = fct_elevation_cb)) +
   coord_quickmap()
+
+terrain.colors(3)
+
+
+

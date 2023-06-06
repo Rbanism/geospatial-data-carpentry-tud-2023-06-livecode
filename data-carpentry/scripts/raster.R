@@ -192,7 +192,21 @@ ggplot() +
 CHM_TUD <- DSM_TUD - DTM_TUD
 CHM_TUD_df <- as.data.frame(CHM_TUD, xy = TRUE)
 
+head(CHM_TUD_df)
+
 ggplot() +
   geom_raster(data = CHM_TUD_df,
               aes(x = x, y = y,
-                  fill))
+                  fill = layer)) +
+  scale_fill_gradientn(name = "Canopy Height", colors = terrain.colors(10)) +
+  coord_quickmap()
+
+ggplot(CHM_TUD_df) +
+  geom_histogram(aes(layer))
+
+# Export a GeoTIFF
+
+writeRaster(CHM_TUD, here("fig_output", "CHM_TUD.tiff"),
+            format = "GTiff",
+            overwrite = TRUE,
+            NAflag = -9999)

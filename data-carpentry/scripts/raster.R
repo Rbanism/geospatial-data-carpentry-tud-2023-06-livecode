@@ -187,4 +187,12 @@ ggplot() +
   scale_fill_gradientn(name = "Elevation", colors = terrain.colors(10)) +
   coord_quickmap()
 
+# Raster math
 
+CHM_TUD <- DSM_TUD - DTM_TUD
+CHM_TUD_df <- as.data.frame(CHM_TUD, xy = TRUE)
+
+ggplot() +
+  geom_raster(data = CHM_TUD_df,
+              aes(x = x, y = y,
+                  fill))

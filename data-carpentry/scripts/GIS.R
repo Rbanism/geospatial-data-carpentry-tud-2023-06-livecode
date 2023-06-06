@@ -70,5 +70,12 @@ single_old_buffer <- st_union(buffer_old_bldgs) %>%
 ggplot(single_old_buffer) +
   geom_sf()
 
+old_centroids <- st_centroid(old_buildings)
 
+ggplot() +
+  geom_sf(data = single_old_buffer, aes(fill=ID)) +
+  geom_sf(data = old_centroids)
 
+centroids_intersect_buffers <- 
+  st_intersection(old_centroids, single_old_buffer) %>%
+  mutate(n = 1)

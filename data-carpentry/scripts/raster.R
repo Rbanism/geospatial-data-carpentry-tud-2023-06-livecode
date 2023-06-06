@@ -100,4 +100,10 @@ DSM_hill_TUD <- raster(here("data", "tud-dsm-5m-hill.tif"))
 DSM_hill_TUD  
 
 DSM_hill_TUD_df <- as.data.frame(DSM_hill_TUD, xy = TRUE)
-str(DSM_hill_TUD_df)  
+str(DSM_hill_TUD_df)
+
+ggplot() +
+  geom_raster(data = DSM_hill_TUD_df,
+              aes(x = x, y = y, alpha = tud.dsm.5m.hill)) +
+  scale_alpha(range = c(0.15, 0.65), guide = "none") +
+  coord_quickmap()

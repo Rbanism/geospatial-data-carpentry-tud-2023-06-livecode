@@ -87,5 +87,6 @@ ggplot() +
 
 terrain.colors(3)
 
-
+ggplot() +
+  geom_raster(data = DSM_TUD_df)
 

@@ -30,7 +30,12 @@ ggplot(data = buildings) +
 
 library(leaflet)
 
+buildings2 <- x$osm_polygons
+buildings2$build_date <- 
+  if_else(as.numeric(buildings2$start_date) < 1900,
+          1900, as.numeric(buildings2$start_date))
 
-leaflet(buildings) %>%
+
+leaflet(buildings2) %>%
   addTiles() %>%
-  addPolygons(buildings)
+  addPolygons(fillColor = ~cobuildings2$start_date)

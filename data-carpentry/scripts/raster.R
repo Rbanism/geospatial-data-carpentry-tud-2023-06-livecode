@@ -186,3 +186,5 @@ ggplot() +
                   alpha = tud.dtm.5m.hill.ETRS89)) +
   scale_fill_gradientn(name = "Elevation", colors = terrain.colors(10)) +
   coord_quickmap()
+
+

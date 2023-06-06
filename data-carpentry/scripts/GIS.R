@@ -14,3 +14,6 @@ x <- opq(bbox = bbnl) %>%
   osmdata_sf()
 
 assign("has_internet_via_proxy", TRUE, environment(curl::has_internet))
+
+buildings <- x$osm_polygons
+head(buildings)

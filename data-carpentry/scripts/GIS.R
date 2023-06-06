@@ -5,3 +5,6 @@ library(osmdata)
 
 bb <- getbb("Brielle", format_out = "sf_polygon" )
 bb
+
+bbnl <- getbb("Brielle, NL", format_out = "data.frame")
+bbnl

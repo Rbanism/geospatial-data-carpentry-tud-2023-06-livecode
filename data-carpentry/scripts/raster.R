@@ -116,4 +116,6 @@ ggplot() +
               aes(x = x, y = y,
                   alpha = tud.dsm.5m.hill)) +
   scale_fill_viridis_c() +
-  
+  scale_alpha(range = c(0.15, 0.65), guide = "none") +
+  labs(title = "Elevation with hillshade") +
+  coord_quickmap()

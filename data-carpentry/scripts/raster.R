@@ -28,6 +28,8 @@ ggplot() +
 
 plot(DSM_TUD)  
   
+# View Raster CRS
+
 
   
   

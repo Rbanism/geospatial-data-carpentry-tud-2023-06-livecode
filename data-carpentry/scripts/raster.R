@@ -99,5 +99,5 @@ ggplot() +
 DSM_hill_TUD <- raster(here("data", "tud-dsm-5m-hill.tif"))
 DSM_hill_TUD  
 
-
+DSM_hill_TUD_df <- as.data.frame(DSM_hill_TUD, )
   

@@ -37,7 +37,7 @@ buildings2$build_date <-
 
 
 leaflet(buildings2) %>%
-  #addTiles() %>%
-  addProviderTiles(provider = car) %>%
+  addTiles() %>%
+ # addProviderTiles(provider = providers$CartoDB.Positron) %>%
   addPolygons(fillColor = 
                 ~colorQuantile("YlOrRd", build_date)(build_date))

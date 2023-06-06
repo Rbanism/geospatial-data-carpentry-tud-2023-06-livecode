@@ -14,3 +14,4 @@ DSM_TUD <- raster(here("data", "tud-dsm-5m.tif"))
 DSM_TUD
 
 summary(DSM_TUD)
+summary(DSM_TUD, maxsamp = ncell(DSM_TUD))

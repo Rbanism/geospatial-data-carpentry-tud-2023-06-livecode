@@ -64,3 +64,7 @@ head(DSM_TUD_df)
 
 ggplot() +
   geom_bar(data = DSM_TUD_df, aes(fct_elevation))
+
+DSM_TUD_df %>% 
+  group_by(fct_elevation) %>% 
+  count()

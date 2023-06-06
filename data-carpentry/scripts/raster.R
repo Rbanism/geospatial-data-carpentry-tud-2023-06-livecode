@@ -79,4 +79,6 @@ DSM_TUD_df <- DSM_TUD_df %>%
   mutate(fct_elevation_cb = cut(tud.dsm.5m, breaks = custom_bins))
 head(DSM_TUD_df)
 
-ggplot
+ggplot() +
+  geom_raster(data = DSM_TUD_df, aes(x = x,
+                                     y = y))
